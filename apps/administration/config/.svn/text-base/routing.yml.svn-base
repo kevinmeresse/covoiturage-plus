@@ -1,0 +1,199 @@
+log_site:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                LogSite
+    module:               log_site
+    prefix_path:          /log_site
+    column:               id_log_site
+    with_wildcard_routes: true
+
+log_type_provenance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                LogTypeProvenance
+    module:               log_type_provenance
+    prefix_path:          /log_type_provenance
+    column:               id_log_type_provenance
+    with_wildcard_routes: true
+
+sf_guard_user_profile:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUserProfile
+    module:               sf_guard_user_profile
+    prefix_path:          /sf_guard_user_profile
+    column:               id
+    with_wildcard_routes: true
+
+departement_francais:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                DepartementFrancais
+    module:               departement_francais
+    prefix_path:          /departement_francais
+    column:               id_departement
+    with_wildcard_routes: true
+
+region:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Region
+    module:               region
+    prefix_path:          /region
+    column:               id_region
+    with_wildcard_routes: true
+
+pays_monde:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PaysMonde
+    module:               pays_monde
+    prefix_path:          /pays_monde
+    column:               id_pays
+    with_wildcard_routes: true
+
+pays_site:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PaysSite
+    module:               pays_site
+    prefix_path:          /pays_site
+    column:               id
+    with_wildcard_routes: true
+
+site_client:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                SiteClient
+    module:               site_client
+    prefix_path:          /site_client
+    column:               id_site_client
+    with_wildcard_routes: true
+
+pays:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Pays
+    module:               pays
+    prefix_path:          /pays
+    column:               id_pays
+    with_wildcard_routes: true
+
+commune:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Commune
+    module:               commune
+    prefix_path:          /commune
+    column:               id_commune
+    with_wildcard_routes: true
+
+centre_interet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CentreInteret
+    module:               centre_interet
+    prefix_path:          /centre_interet
+    column:               id_centre_interet
+    with_wildcard_routes: true
+
+vehicule_motorisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                VehiculeMotorisation
+    module:               vehicule_motorisation
+    prefix_path:          /vehicule_motorisation
+    column:               id_motorisation
+    with_wildcard_routes: true
+
+vehicule_modele:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                VehiculeModele
+    module:               vehicule_modele
+    prefix_path:          /vehicule_modele
+    column:               id_modele
+    with_wildcard_routes: true
+
+vehicule_marque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                VehiculeMarque
+    module:               vehicule_marque
+    prefix_path:          /vehicule_marque
+    column:               id_marque
+    with_wildcard_routes: true
+
+vehicule_categorie:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                VehiculeCategorie
+    module:               vehicule_categorie
+    prefix_path:          /vehicule_categorie
+    column:               id_vehicule_categorie
+    with_wildcard_routes: true
+
+trajet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Trajet
+    module:               trajet
+    prefix_path:          /trajet
+    column:               id_trajet
+    with_wildcard_routes: true
+
+covoitureur:
+  url:   /:module/:action/*
+
+equipage:
+  url:   /:module/:action/*
+  
+trajet:
+  url:   /:module/:action/*
+  
+livre_or:
+  url:   /:module/:action/*
+  
+photo:
+  url:   /:module/:action/*
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: accueil, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+sf_guard_group:
+  url:   /sfGuardGroup
+  param: { module: sfGuardGroup }
+
+sf_guard_user:
+  url:   /sfGuardUser
+  param: { module: sfGuardUser }
+
+sf_guard_permission:
+  url:   /sfGuardPermission
+  param: { module: sfGuardPermission }

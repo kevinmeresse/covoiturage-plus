@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           VehiculeMarque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          vehicule_marque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_marque:        { label: Marque, help: Indiquez la marque du véhicule }
+        description:       { label: Description }
+
+      list:
+        title: Liste des marques de véhicule
+        display: [nom_marque, description]
+      filter:
+        display: [nom_marque]
+      form:    ~
+      edit:
+        title:  "Marque de véhicule => %%nom_marque%%"
+      new:     ~

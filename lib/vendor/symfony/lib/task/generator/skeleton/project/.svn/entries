@@ -1,0 +1,89 @@
+10
+
+dir
+1663
+svn://kevin@193.169.11.211/roulez-malin/V3/trunk/sources/lib/vendor/symfony/lib/task/generator/skeleton/project
+svn://kevin@193.169.11.211/roulez-malin
+
+
+
+2011-05-23T12:33:48.178541Z
+8
+svn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cbeffc2b-6f1d-4316-b77f-f30d48018937
+
+test
+dir
+
+log
+dir
+
+plugins
+dir
+
+apps
+dir
+
+cache
+dir
+
+symfony
+file
+
+
+
+
+2012-10-11T16:51:02.000000Z
+ec0244c82ba8f52899e48b4e473f78e8
+2011-05-23T12:33:48.178541Z
+8
+svn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+446
+
+config
+dir
+
+lib
+dir
+
+data
+dir
+
+web
+dir
+

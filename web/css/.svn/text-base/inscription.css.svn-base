@@ -1,0 +1,99 @@
+/* Page inscription 
+================================================== */
+
+
+
+#accordion {}
+#accordion h3, #depottrajet h3 {	background: #77AD0C; /* ie6 trop pourri - ie tout court */
+	background: -moz-linear-gradient(top, rgba(182,232,81,1) 0%, rgba(119,173,12,1) 90%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(182,232,81,1)), color-stop(90%,rgba(119,173,12,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* IE10+ */
+	background: linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* W3C */
+	padding:10px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom:10px;
+	font-size:1.6em;
+	}
+.ui-widget-content {   padding:10px;}
+
+.ui-widget-header { border: 1px solid #93C72A; background: #93C72A; color: #ffffff;  }
+
+.datepicker { width:120px;}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;  }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #93C72A; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { background: #93C72A;  color: #ffffff; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {  background: #93C72A; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #93C72A; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:10px; }
+.ui-datepicker .ui-datepicker-next { right:10px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:10px; }
+.ui-datepicker .ui-datepicker-next-hover { right:10px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+#accordion h3 a, #depottrajet h3 a { color:#FFF;  font-family:'HelveticaLTCondensed',arial, sans-serif !important; font-size:1.6em !important; text-decoration:none;}
+
+#accordion h3 span.ui-icon, #depottrajet h3 span.ui-icon { display:none;}
+
+#accordion h3 span, #depottrajet h3 span{ display: block; height:35px; width:35px; 	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px; background-color:#FFF; float:left; margin-right:10px; text-align:center; font-size:0.8em; font-family:'HelveticaLTCondensedBold',arial, sans-serif; color:#77AD0C; margin-top:0 !important;}
+
+#accordion h3 {cursor:pointer;}
+
+#accordion ul.commande-etape-1 { margin:10px 0 10px 0; padding:0; }	
+#accordion ul.commande-etape-1 li { display:inline; padding-left:20px; background:url(../images/structure/fleche-gris.png) no-repeat; background-position:4px 4px; padding-right:20px;}
+
+#accordion .ascenceur ul li { background:none; background:url(../images/structure/fleche-gris.png) no-repeat; background-position:4px 4px; padding-left:20px;}
+.ascenceur { overflow-y:scroll; border:1px solid #ccc; padding:10px;}
+.h400{ height:400px; }
+
+#accordion .etape1, { padding-bottom:10px;}
+#accordion .etape1 input[type="checkbox"] { float:left; }
+#accordion .etape1 label, #accordion .etape2 label{ float:left;}
+
+#accordion .etape2, #accordion .etape3  { padding:10px; margin-bottom:10px;}
+#accordion .etape2 p, #accordion .etape3 p { display:table; width:600px; margin-bottom:0px; }
+#accordion .etape2 label, #accordion .etape3 label { display:table-cell; width:200px;}
+
+#accordion .etape2 input[type="text"], #accordion .etape2 input[type="password"], #accordion .etape2 input[type="email"] { display:table-cell;}
+#accordion .etape3 input[type="text"], #accordion .etape3 input[type="password"], #accordion .etape3 input[type="email"] { display:table-cell;}
+
+#accordion .etape3 input[type="submit"] { background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.4em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none; border:0; font-weight:normal; float:right;}
+
+#accordion p.etape-suivante, #depottrajet .etape1 p.etape-suivante { text-align:right; display:block; padding-bottom:10px;}
+#accordion p.etape-suivante a, #depottrajet p.etape-suivante a { background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.4em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none;}
+
+#accordion div.form-inscription { height:30px;}
+#accordion div.form-inscription ul { float:right; width:200px;}
+#accordion div.form-inscription ul li { float:left; width:60px;}
+#accordion div.form-inscription label {width:300px;float:left;}
+#accordion div.form-inscription input { float:right;}
+#accordion div.form-inscription select { float:right;}
+#accordion div.form-inscription ul li input { float:left;} 
+#accordion div.form-inscription ul li label { float:left;width:30px;} 

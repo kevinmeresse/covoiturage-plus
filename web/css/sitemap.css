@@ -1,0 +1,32 @@
+/* SITEMAP */
+
+div#sitemap h1 { margin-bottom:40px;}
+
+
+
+ul.liste-niveau-un li.niveau-un a { 	display:block;
+					background:#77AD0C url(../images/structure/fleche-blanche.png) 2px 4px no-repeat;
+					height:20px;
+					color:white;
+					text-decoration:none;
+					padding-left:15px;
+					
+					}
+					
+ul.liste-niveau-un li.niveau-un ul.niveau-deux li a { 
+						display:block;
+						background:url(../images/structure/fleche-orange.png) 2px 4px no-repeat;
+						color:#333;
+						text-decoration:none;
+						margin-left:20px;
+						margin-bottom:5px;	
+						height:100%
+						}
+
+ul.liste-niveau-un li.niveau-un ul.niveau-deux li a:hover { 	
+							color:#666;	
+						}
+
+ul.liste-niveau-un li[float="left"] + li {
+float:none !important;
+}

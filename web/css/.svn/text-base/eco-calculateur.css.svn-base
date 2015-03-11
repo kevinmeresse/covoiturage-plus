@@ -1,0 +1,42 @@
+/* eco-calculateur
+================================================== */
+
+
+
+#eco-calcul h2 { font-family:'HelveticaLTCondensed', Arial, sans-serif; font-size:3em; color:#333; }
+
+#eco-calcul p {margin:0; padding:0;float:left;}
+#eco-calcul div.five label { height:40px;float:left;}
+#eco-calcul div.five input[type="text"] {margin:0 0 10px 0; height:30px; width:85%; font-size:140%;float:left;}
+#eco-calcul input[type="submit"] { margin-top:10px; float:left;}
+#eco-calcul div input[type="submit"], #eco-calcul input[type="submit"]  {
+	background-color:#333;
+	height:58px;	
+	border: none;
+	vertical-align:top;
+	color:white;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	font-size:1.5em;
+	font-weight:normal;
+	-moz-box-shadow: 5px 5px 5px #ccc;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+  	margin-bottom:10px !important;
+	outline:none;
+}
+
+#eco-calcul div.five { margin-bottom:10px; }
+
+#eco-calcul div.five p { color:#999;}
+
+#eco-calcul table { width:100%; margin:20px 0; clear:both;}
+#eco-calcul table thead tr th { text-align:center; vertical-align:middle;}
+#eco-calcul table thead tr, #eco-calcul #liste-resultat table thead tr:hover { background:#93C72A; color:#FFF; font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:1em; text-align:center; height:35px;}
+#eco-calcul #liste-resultat table thead tr th { padding:3px; }
+
+#eco-calcul table tbody { height:80px;}
+
+#eco-calcul table tbody tr td { border-right:dashed 1px #666; text-align:center; padding:10px;}
+#eco-calcul table tbody tr td + td + td + td { border:none;}

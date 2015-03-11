@@ -1,0 +1,8 @@
+all:
+  meta:
+    creator:      Roulez Malin
+    title:        title
+    subject:      subject
+    description:  description
+    keywords:     keywords
+    category:     category

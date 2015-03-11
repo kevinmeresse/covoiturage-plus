@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           SiteClient
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          site_client
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        societe:          { label: Société, help: Indiquez le nom e la société (site client) }
+        url_application:  { label: URL }
+        id_site_parent:   { label: Site Parent }
+
+      list:
+        title:            Liste des sites client
+        display:          [societe, id_site_parent, url_application ]
+      filter:
+        class:            false
+      form:    ~
+      edit:
+        title:  "Site client => %%societe%%"
+      new:     ~

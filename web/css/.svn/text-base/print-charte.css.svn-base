@@ -1,0 +1,11 @@
+#header,
+div.container div.one-third,
+div.container div.sixteen,
+#outilbaspage,
+div.footer,
+#inscription h3.ui-corner-all,
+#inscription div.etape1 ul.commande-etape-1,
+#inscription div.etape1 form
+{
+ display:none;
+}

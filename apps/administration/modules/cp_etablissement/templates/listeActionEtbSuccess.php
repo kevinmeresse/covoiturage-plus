@@ -1,0 +1,1 @@
+<?php include_component('cp_action_etb','listeActionEtb', array('etb' => $etb, 'popup' => isset($popup)?$popup:0, 'listeIntegre' => isset($listeIntegre)?$listeIntegre:0)) ?>

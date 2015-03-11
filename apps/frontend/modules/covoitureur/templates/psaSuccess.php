@@ -1,0 +1,1 @@
+<?php echo "Bienvenue sur le site de PSA ".$id; ?><br/>

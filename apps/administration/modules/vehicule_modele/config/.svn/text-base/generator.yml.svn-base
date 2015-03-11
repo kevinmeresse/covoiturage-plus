@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           VehiculeModele
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          vehicule_modele
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_modele:        { label: Modèle, help: Indiquez le nom du modèle du véhicule }
+        description:       { label: Description }
+        vehicule_marque:   { label: Marque }
+        id_marque:         { label: Marque }
+      list:
+        title: Liste des modèles de véhicule
+        display: [nom_modele, vehicule_marque]
+        table_method: retrieveBackendVehiculeMarqueList
+      filter:
+        display: [nom_modele, id_marque]
+      form:    ~
+      edit:
+        title:  "Modèle de véhicule => %%nom_modele%%"
+      new:     ~

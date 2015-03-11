@@ -1,0 +1,63 @@
+/* .depottrajet
+================================================== */
+
+
+#accordion {}
+#accordion h3, #depottrajet h3 {	background: #77AD0C; /* ie6 trop pourri - ie tout court */
+	background: -moz-linear-gradient(top, rgba(182,232,81,1) 0%, rgba(119,173,12,1) 90%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(182,232,81,1)), color-stop(90%,rgba(119,173,12,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* IE10+ */
+	background: linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* W3C */
+	padding:10px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom:10px;
+	font-size:1.6em;
+	}
+
+#accordion h3 a, #depottrajet h3 a { color:#FFF;  font-family:'HelveticaLTCondensed',arial, sans-serif !important; font-size:1.6em !important; text-decoration:none;}
+
+#accordion h3 span.ui-icon, #depottrajet h3 span.ui-icon { display:none;}
+
+#accordion h3 span, #depottrajet h3 span{ display: block; height:35px; width:35px; 	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px; background-color:#FFF; float:left; margin-right:10px; text-align:center; font-size:0.8em; font-family:'HelveticaLTCondensedBold',arial, sans-serif; color:#77AD0C; }
+	
+	
+#accordion p.etape-suivante, #depottrajet .etape1 p.etape-suivante { text-align:right; display:block; padding-bottom:10px;}
+#accordion p.etape-suivante a, #depottrajet p.etape-suivante a{ background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.4em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none;}
+
+
+#depottrajet .etape1 h4, #depottrajet .etape2 h4 { font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:2em; text-decoration:none; color: #77AD0C; }
+#depottrajet .etape1 {margin-bottom:10px;}
+
+
+#depottrajet .etape2, #depottrajet .etape3 { padding:10px;}
+#depottrajet .etape2 p { display:block !important;}
+#depottrajet .etape2 p.etape-suivante{ text-align:right;}
+
+select.date { width:60px;}
+
+#depottrajet .etape1 p, #depottrajet .etape3 p { display:table; margin-bottom:0; padding:0;}
+#depottrajet .etape1 label, #depottrajet .etape3 label { display:table-cell; width:200px;margin-bottom:10px; padding:0; vertical-align:top;}
+#depottrajet .etape3 input[type="text"], #depottrajet .etape3 input[type="password"], #depottrajet .etape3 input[type="email"] { display:table-cell;}
+
+#depottrajet .etape1 select , #depottrajet .etape2 select,  #depottrajet .etape3 select { padding:5px;}
+
+
+#depottrajet .etape1 p.texteExemple { margin-top:10px;}
+#depottrajet p#participation_frais, #depottrajet p#pBlocPreciserEtape{ margin-bottom:10px;}
+#depottrajet p#volume_bagage { margin-top:10px;}
+
+table#tableauDateRegulierDepotTrajet { width:90%;}
+#depottrajet table tr td{ vertical-align:top;} 
+
+#depottrajet .etape3  textarea, #depottrajet .etape2  textarea  { width:90%; max-width:500px; padding:5px; margin-bottom:0px;}
+
+.texteExemple { font-size:0.8em; line-height:0.8em; color:#999;}
+
+#depottrajet .etape3 p.valide { text-align:right; float:right;}
+#depottrajet .etape3 p.valide input[type="submit"] {  background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.4em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none; border:0; font-weight:normal; }

@@ -1,0 +1,1387 @@
+/* 
+    Document   : main-bo
+    Created on : 18 août 2011, 10:15:26
+    Author     : Christophe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* TABLE DES MATIERES 
+
+- FONT-FACE 
+- GENERAL
+- LISTES
+- TABLEAUX
+- BOUTONS
+- LOGIN-BOX
+- DECONNECTION ADMIN
+- MENU
+- FORMULAIRES
+- BLOC STATISTIQUE
+- BLOC CMS
+- PAGINATION
+- FOOTER
+
+*/
+
+
+/* #Font-Face
+================================================== */
+
+@font-face {
+    font-family: 'HelveticaLTCondensed';
+    src: url('../font/lte50052-webfont.eot');
+    src: url('../font/lte50052-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/lte50052-webfont.woff') format('woff'),
+        url('../font/lte50052-webfont.ttf') format('truetype'),
+        url('../font/lte50052-webfont.svg#HelveticaLTCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaLTCondensedBold';
+    src: url('../font/lte50054-webfont.eot');
+    src: url('../font/lte50054-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/lte50054-webfont.woff') format('woff'),
+        url('../font/lte50054-webfont.ttf') format('truetype'),
+        url('../font/lte50054-webfont.svg#HelveticaLTCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DSDigitalBold';
+    src: url('../font/ds-digib-webfont.eot');
+    src: url('../font/ds-digib-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/ds-digib-webfont.woff') format('woff'),
+        url('../font/ds-digib-webfont.ttf') format('truetype'),
+        url('../font/ds-digib-webfont.svg#DSDigitalBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General 
+====================================== */
+
+body { font-family:'HelveticaLTCondensed',arial, sans-serif; background: #ddd;} 
+body#ie6,body#ie7,body#ie8,body#ie9 { font-family:arial, sans-serif; background: #ddd;}
+
+div#admin-container {background:#eee; padding-bottom:30px;}
+
+h1, h2, h3 {padding-left:10px;margin-top: 0 !important;}
+
+div.pagination_desc { padding-left:10px; margin-top:10px;}
+
+h1.banniere { 	display:block;
+               text-indent:-9999px;
+               outline:none;
+               width:960px;
+               height:190px;
+               background:url(../images/structure/backoffice/banniere-backoffice.png) no-repeat;
+               margin:0 !important;
+
+}
+
+table.cms, div.cms, div#cms { margin-left:10px;}
+
+form table { padding-left:10px}
+
+a { outline:none;}
+
+.clear { clear:both;}
+/* calendar */
+
+div#ui-datepicker-div { background:white;}
+/* Datepicker
+----------------------------------*/
+
+/* states and images */
+.ui-icon { width: 16px; height: 16px; background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(../images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(../sfJqueryReloadedPlugin/css/ui-lightness/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(../../images/ui-icons_ffd27a_256x240.png); }
+
+.ui-datepicker { width: 17em; padding: .2em .2em 0; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { float:left; font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { float: right; }
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; color: #77AD0C;}
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+/* Liste
+====================================== */
+
+ul, ol { list-style:none !important; margin:0 !important;}
+
+ul li { list-style:none !important;}
+
+
+table tbody tr td ul.radio_list { width:550px;margin:0 !important;padding-left:45px; }
+table tbody tr td ul.radio_list li { width:120px;display:inline;margin:2px 0 0 0 ;}
+table tbody tr td ul.radio_list li label { width:100px; float:left;}
+#type-action-form table tbody tr td ul.radio_list li label { width:200px; float:left;}
+table tbody tr td ul.radio_list li input {float:left;}
+
+/* Liste pour les recherche trajet pour les équipages
+====================================================== */
+table.recherche_trajet_equipage tbody tr td.espace { width:50px; }
+table.recherche_trajet_equipage tbody tr td ul.radio_list { width:400px;margin:0 !important;padding-left:45px; }
+table.recherche_trajet_equipage tbody tr td ul.radio_list li { width:120px;display:inline;margin:2px 0 0 0 ;}
+table.recherche_trajet_equipage tbody tr td ul.radio_list li label { width:100px; float:left;}
+table.recherche_trajet_equipage tbody tr td ul.radio_list li input {float:left;}
+
+table.contact {width: 50%;}
+
+/* Liste pour les mises en relation
+====================================== */
+table.mer tbody tr td ul.radio_list { width:650px;margin:0 !important;padding-left:0px; }
+table.mer tbody tr td ul.radio_list li { width:250px; display:block; margin:2px 0 0 0 ;}
+table.mer tbody tr td ul.radio_list li label { width:200px; }
+table.mer tbody tr td ul.radio_list li input {}
+
+/* Tableau
+====================================== */
+table.liste { 	background:white;
+               -moz-box-shadow: 5px 5px 5px #ccc;
+               -webkit-box-shadow: 5px 5px 5px #ccc;
+               box-shadow: 5px 5px 5px #ccc;
+               border-collapse:collapse;
+               white-space:nowrap;
+               width:90%;
+}
+
+table.liste tr { height:30px;}
+
+table.liste tbody tr:hover { background:#ccc; border-right:none;}
+
+table.liste thead { background: #77AD0C; color:white; font-weight:normal; }
+table thead tr th {  border-right:2px solid white;}
+table thead tr th:last-child { border:none;}
+table thead tr th,table tbody tr th { text-align:left;}
+/* table tbody tr th, table.liste tbody tr th { font-weight:bold !important;} */
+table.liste tbody tr td, table.liste tbody tr th { border:none;}
+
+/* altenance dans le ligne de tableau  */
+table.liste tr.odd {}
+table.liste tr.even {
+    background-color: #ccffcc;
+}
+
+
+/*liste des communautés de communes*/
+
+table.communaute {  width:90%; margin-left:10px;}
+
+table.communaute thead tr th { width:40%;}
+table.communaute thead tr th + th { width:40%;}
+table.communaute thead tr th + th + th { width:20%;}
+
+
+table.communaute tbody tr td { border-bottom:dashed 1px #999;}
+table.communaute tbody tr td { text-align:left;}
+
+table.communaute tbody tr td a { color:#333;}
+
+input.nom_cc {width: 400px;}
+
+/* liste des communautés de communes liées */
+
+table.liee { width:40%;margin-left:10px;}
+table.liee thead tr th { width:45%}
+table.liee thead tr th + th + th { width:10%}
+table.liee tbody tr td { border-bottom:dashed 1px #999; }
+
+/* liste des évènements */
+
+table.evenement { width:100%;}
+table.evenement tbody tr td { border-bottom:dashed 1px #999; text-align:center;}
+
+/* liste des lieux */
+
+table.lieu { width:80%;margin-left:10px;}
+table.lieu tbody tr td { width:35%;}
+table.lieu tbody tr td + td { width:25%;}
+table.lieu tbody tr td + td + td { width:30%;}
+table.lieu tbody tr td + td + td + td { width:10%;}
+
+table.lieu tbody tr td { }
+
+div#lieu-form table.lieu-edit { width:70%;margin-left:10px;}
+div#lieu-form table.lieu-edit tbody tr th { width:40%;}
+div#lieu-form table.lieu-edit tbody tr td  { width:60%;}
+
+table.lieu-edit tbody tr td ul.radio_list { width:300px;margin:0 !important;padding-left:45px; }
+table.lieu-edit tbody tr td ul.radio_list li { width:120px;display:inline;margin:2px 0 0 0 ;}
+table.lieu-edit tbody tr td ul.radio_list li label { width:100px; float:left;}
+table.lieu-edit tbody tr td ul.radio_list li input {float:left;}
+
+
+/* type de lieux */
+
+table.type-lieux { width:40%;margin-left:10px;}
+table.type-lieux thead tr th { width:80%;}
+table.type-lieux thead tr th + th { width:20%;}
+
+/* liste des trajets */
+
+table.trajets { width:80%;margin-left:10px;}
+
+/* liste des trajets avec date de modification et de création */
+
+table.trajet-date { width:90%;margin-left:10px;}
+table.trajet tbody tr td { width:25%;}
+table.trajet tbody tr td + td { width:25%;}
+table.trajet tbody tr td + td + td { width:20%;}
+table.trajet tbody tr td + td + td + td { width:20%;}
+table.trajet tbody tr td + td + td + td + td { width:10%;}
+table.trajet tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des trajets par covoitureur */
+
+table.trajet-covoit { width:90%; margin-left:10px;}
+table.trajet-covoit thead tr th {width:25%; }
+table.trajet-covoit thead tr th + th {width:25%;}
+table.trajet-covoit thead tr th + th + th {width:25%;}
+table.trajet-covoit thead tr th + th + th + th {width:20%;}
+table.trajet-covoit thead tr th + th + th + th + th {width:5%;}
+table.trajet-covoit tbody tr td { border-bottom:dashed 1px #999;}
+
+table.insere { padding: 0;}
+table.insere tbody tr td { border-bottom:none;}
+
+/* ligne trajet equipagée  */
+table.trajet-covoit tr.trajet-equipage-actif {background-color: #ff6666;}
+
+/* ligne trajet avec reponse MER  */
+table.trajet-covoit tr.mer-normal {}
+table.trajet-covoit tr.mer-refus {
+    color: #cc0033;
+    font-weight: bold;
+}
+table.trajet-covoit tr.mer-attente {
+    color: #999999;
+    font-style: italic;
+}
+
+/* ligne trajet avec association equipage */
+table.trajet-covoit tr.trajet-origine {}
+table.trajet-covoit tr.trajet-associe {
+/*    color: #cc0033;  */
+    font-style: italic;
+}
+
+/* etat de la MER pour un trajet      */
+table.trajet-covoit td.statut_mer_vide,
+td.statut_mer_vide {}
+table.trajet-covoit td.statut_mer_0,
+table.trajet-covoit td.statut_mer_0 a,
+td.statut_mer_0,
+td.statut_mer_0 a {
+    background: white;
+    color: blck;
+}
+table.trajet-covoit td.statut_mer_1,
+table.trajet-covoit td.statut_mer_1 a,
+td.statut_mer_1,
+td.statut_mer_1 a {
+    background: #87fb77;
+    color: white;
+}
+table.trajet-covoit td.statut_mer_2,
+table.trajet-covoit td.statut_mer_2 a,
+td.statut_mer_2,
+td.statut_mer_2 a {
+    background: #d41b1f;
+    color: white;
+}
+table.trajet-covoit td.statut_mer_3,
+table.trajet-covoit td.statut_mer_3 a,
+td.statut_mer_3,
+td.statut_mer_3 a {
+    background: #ecaf4f;
+    color: black;
+}
+table.trajet-covoit td.statut_mer_4,
+table.trajet-covoit td.statut_mer_4 a,
+td.statut_mer_4,
+td.statut_mer_4 a {
+    background: #4f5dec;
+    color: white;
+}
+
+/* table des horaires prise et fin service  */
+
+table.horaire_service { width:90%; margin-left:10px;}
+table.horaire_service thead {
+
+    font-style: italic;
+
+}
+table.horaire_service thead tr th {width:25%; }
+table.horaire_service thead tr th + th {width:25%;}
+table.horaire_service thead tr th + th + th {width:25%;}
+table.horaire_service thead tr th + th + th + th {width:25%;}
+table.horaire_service tbody tr td { border-bottom:dashed 1px #999;font-style: italic;
+                                    color: #999999;
+}
+
+/* liste des trajets correspondants */
+
+table.trajet-corres {
+    margin-left: 10px;
+}
+
+/* liste des equipages */
+
+table.equipages { width:100%;}
+table.equipages thead tr th {width:15%; }
+table.equipages thead tr th + th {width:15%;}
+table.equipages thead tr th + th + th {width:15%;}
+table.equipages thead tr th + th + th + th {width:15%;}
+table.equipages thead tr th + th + th + th + th {width:10%;}
+table.equipages thead tr th + th + th + th + th + th {width:20%;}
+table.equipages thead tr th + th + th + th + th + th + th {width:10%}
+
+table.equipages tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des covoitureurs */
+
+table.covoitureurs { width:90%; margin-top:10px;margin-left:10px;}
+table.covoitureurs tbody tr.odd { cursor:pointer; border-right:none; }
+table.covoitureurs tbody tr td { border-bottom:dashed 1px #999;}
+table.covoitureurs thead tr th { width:40%;}
+table.covoitureurs thead tr th + th { width:10%;}
+table.covoitureurs thead tr th + th + th { width:20%;}
+table.covoitureurs thead tr th + th + th + th { width:20%;}
+table.covoitureurs thead tr th + th + th + th + th { width:10%;}
+table.covoitureurs tbody tr td + td { text-align:center;}
+table.covoitureurs tbody tr td + td + td + td{ text-align:left;}
+/* edition création du profil d'un covoitureur */
+
+/* table des listes des trajets par covoitureur (tableau inclu) */
+table.covoitureurs table.trajet_liste_include tr td {
+    border-bottom: none;
+    text-align: left;
+}
+
+
+/* liste des mise en relation par date */
+
+table.mise-relation-date { width:90%;margin-left:10px;}
+table.mise-relation-date thead tr th { width:25%; }
+table.mise-relation-date thead tr th + th { width:15%}
+table.mise-relation-date thead tr th + th + th { width:20%}
+table.mise-relation-date thead tr th + th + th + th { width:20%}
+table.mise-relation-date thead tr th + th + th + th + th { width:10%}
+table.mise-relation-date thead tr th + th + th + th + th + th { width:10%}
+table.mise-relation-date tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des commentaires */
+
+table.covoit-com { width:100%;}
+table.covoit-com thead tr th { width:10%; text-align:center;}
+table.covoit-com thead tr th + th { width:10%;}
+table.covoit-com thead tr th + th + th { width:40%;}
+table.covoit-com thead tr th + th + th + th { width:10%;}
+table.covoit-com thead tr th + th + th + th + th { width:10%;}
+table.covoit-com thead tr th + th + th + th + th + th { width:10%;}
+table.covoit-com thead tr th + th + th + th + th + th + th { width:5%;}
+table.covoit-com thead tr th + th + th + th + th + th + th + th { width:5%;}
+table.covoit-com tbody tr td { border-bottom:dashed 1px #999;}
+
+/* affiche 1 commentaire */
+
+table.covoit-1-com {}
+
+/* liste vehicules covoitureurs */
+
+table.covoit-vehicule { width:90%;margin-left:10px;}
+table.covoit-vehicule thead tr th { width:15%; text-align:center;}
+table.covoit-vehicule thead tr th + th { width:15%}
+table.covoit-vehicule thead tr th + th + th { width:15%}
+table.covoit-vehicule thead tr th + th + th + th { width:15%}
+table.covoit-vehicule thead tr th + th + th + th + th { width:10%}
+table.covoit-vehicule thead tr th + th + th + th + th + th { width:10%}
+table.covoit-vehicule thead tr th + th + th + th + th + th + th { width:15%}
+table.covoit-vehicule thead tr th + th + th + th + th + th + th + th { width:5%}
+table.covoit-vehicule tbody tr td { border-bottom:dashed 1px #999;}
+table.covoit-vehicule tbody tr td + td {text-align:center;} 
+
+/* photo des covoitureurs */
+
+table.covoitureurs-photo { width :90%;margin-left:10px;}
+table.covoitureurs-photo thead tr th { width:25%;}
+table.covoitureurs-photo thead tr th + th { width:20%;}
+table.covoitureurs-photo thead tr th + th + th { width:20%;}
+table.covoitureurs-photo thead tr th + th + th + th { width:20%;}
+table.covoitureurs-photo thead tr th + th + th + th + th { width:10%;}
+table.covoitureurs-photo thead tr th + th + th + th + th + th { width:5%;}
+
+table.covoitureurs-photo tbody tr td { border-bottom:dashed 1px #999;}
+
+/* gestion du cadre de la photo en cas de photo validée ou non */
+img.photo_non_valide {
+
+    border-right-color: #ff3333;
+    border-left-color: #ff3333;
+    border-bottom-color: #ff3333;
+    border-top-color: #ff3333;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+}
+
+img.photo_valide {}
+
+/* liste des fonctions des covoitureur */
+
+table.covoit-fonction { width:50%;margin-left:10px;}
+table.covoit-fonction thead tr th { width:80%;}
+table.covoit-fonction thead tr th + th { width:20%;}
+
+table.covoit-fonction tbody tr td { border-bottom:dashed 1px #999;}
+
+/* visualisation de 1 covoitureur-fonction */
+
+table.covoit-1-fonction { width:40%; margin-top:20px;margin-left:10px;}
+
+/* liste des liens covoitureurs */
+
+table.lien-covoit { width:70%;margin-left:10px;}
+table.lien-covoit thead tr th { width:55%;}
+table.lien-covoit thead tr th + th { width:35%;}
+table.lien-covoit thead tr th + th + th { width:10%;}
+table.lien-covoit tbody tr { border-bottom:dashed 1px #999; }
+
+/* visualisation de 1 lien */
+
+table.visualiser-lien { width:40%; margin-top:20px;margin-left:10px;}
+
+/* liste des etablissements */
+
+table.etablissements-liste { width:100%;}
+table.etablissements-liste thead tr th {width:10%; }
+table.etablissements-liste thead tr th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th + th {width:15%;}
+table.etablissements-liste thead tr th + th + th + th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th + th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th + th + th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th + th + th + th + th + th {width:10%;}
+table.etablissements-liste thead tr th + th + th + th + th + th + th + th + th + th {width:5%;}
+table.etablissements-liste tbody tr td { border-bottom:dashed 1px #999;}
+table.etablissements-liste tbody tr td.soc_rs { 
+    font-weight: bold;
+}
+table.etablissements-liste tbody tr td.etb_rs { 
+    font-style: italic;
+    color: #999999;
+}
+
+table.etablissements-edit { width:90%;}
+
+table.etablissementRS-edit { width:90%;}
+
+/* liste contact detaillée */
+
+table.contact-list-detail { width:100%; white-space:normal;}
+table.contact-list-detail thead tr th { width:5%;}
+table.contact-list-detail thead tr th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th + th + th + th + th { width:10%;}
+table.contact-list-detail thead tr th + th + th + th + th + th + th + th + th + th + th { width:5%;}
+table.contact-list-detail tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste contact associées aux etablissements */
+
+table.contact-assoc-etab { width:90%;margin-left:10px;}
+
+/*liste action associées aux covoitureurs */
+
+table.action-assoc-covoit { width:100%; white-space:normal;}
+table.action-assoc-covoit thead tr th { width:10%;}
+table.action-assoc-covoit thead tr th + th { width:30%;}
+table.action-assoc-covoit thead tr th + th + th { width:10%;}
+table.action-assoc-covoit thead tr th + th + th + th { width:10%;}
+table.action-assoc-covoit thead tr th + th + th + th + th { width:10%;}
+table.action-assoc-covoit thead tr th + th + th + th + th + th { width:10%;}
+table.action-assoc-covoit thead tr th + th + th + th + th + th + th { width:10%;}
+table.action-assoc-covoit thead tr th + th + th + th + th + th + th + th { width:10%;}
+table.action-assoc-covoit tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste actions associées aux etablissements */ 
+
+table.action-assoc-etab { width:90%;margin-left:10px;}
+
+
+/* liste des type d'actions */
+
+table.type-actions { width:95%;margin-left:10px;}
+table.type-actions thead tr th {width:30%; }
+table.type-actions thead tr th + th {width:25%;}
+table.type-actions thead tr th + th + th {width:35%;}
+table.type-actions thead tr th + th + th + th {width:10%;}
+
+table.type-actions tbody tr td { border-bottom:dashed 1px #999;}
+
+/* status des etablissements */
+
+table.etab-status { width:70%; margin-left:10px;}
+table.etab-status thead tr th { width:10%;}
+table.etab-status thead tr th + th { width:15%;}
+table.etab-status thead tr th + th + th { width:15%;}
+table.etab-status thead tr th + th + th + th { width:30%;}
+table.etab-status thead tr th + th + th + th + th { width:30%;}
+table.etab-status tbody tr td { border-bottom:dashed 1px #999;}
+
+
+/* liste des horaires */
+
+table.etab-horaire { width:60%;margin-left:10px;}
+table.etab-horaire thead tr th {width:45%;}
+table.etab-horaire thead tr th + th {width:45%;}
+table.etab-horaire thead tr th + th + th{width:10%;}
+table.etab-horaire tbody tr td { border-bottom:dashed 1px #999;}
+
+/* visualiser 1 horaire */
+
+table.visualiser-1-horaire {  width:40%; margin-top:20px;margin-left:10px;}
+
+/* liste des secteur */
+
+table.etab-secteur { width:60%;margin-left:10px;}
+table.etab-secteur thead tr th {width:45%;}
+table.etab-secteur thead tr th + th {width:45%;}
+table.etab-secteur thead tr th + th + th{width:10%;}
+table.etab-secteur tbody tr td { border-bottom:dashed 1px #999;}
+
+
+
+
+
+/* liste des pages de contenus non liées */
+
+table.contenu-non-lie { width:90%; margin-top:15px;margin-left:10px;}
+table.contenu-non-lie thead tr th { width:5%;}
+table.contenu-non-lie thead tr th + th { width:10%;}
+table.contenu-non-lie thead tr th + th + th { width:15%;}
+table.contenu-non-lie thead tr th + th + th + th { width:15%;}
+table.contenu-non-lie thead tr th + th + th + th + th { width:15%;}
+table.contenu-non-lie thead tr th + th + th + th + th + th { width:15%;}
+table.contenu-non-lie thead tr th + th + th + th + th + th + th { width:15%;}
+table.contenu-non-lie thead tr th + th + th + th + th + th + th + th { width:10%;}
+table.contenu-non-lie tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des pages de contenus liés detaillée */
+
+table.contenu-lie-detail { width:100%;white-space:normal; margin-top:20px;}
+table.contenu-lie-detail tbody tr td { border-bottom:dashed 1px #999;}
+
+/* visualiser une page liee detail */
+
+table.page-liee-detail {  margin-left:10px;margin-top:20px; width:95%; white-space:normal;}
+
+/* remonté liste des pages actualité accueil cms */
+
+table.actualite-list { width:90%; margin-top:15px;margin-left:10px;}
+
+table.actualite-list thead tr th { width:5%;}
+table.actualite-list thead tr th + th { width:10%;}
+table.actualite-list thead tr th + th + th { width:15%;}
+table.actualite-list thead tr th + th + th + th { width:15%;}
+table.actualite-list thead tr th + th + th + th + th { width:15%;}
+table.actualite-list thead tr th + th + th + th + th + th { width:15%;}
+table.actualite-list thead tr th + th + th + th + th + th + th { width:15%;}
+table.actualite-list thead tr th + th + th + th + th + th + th + th { width:10%;}
+table.actualite-list tbody tr td { border-bottom:dashed 1px #999;}
+table.actualite-list tbody tr td.prem-page { 
+    text-align: center;
+    background-color: #ccff99;
+}
+
+
+/* liste des rubriques du cms */
+
+table.rubriques-cms { width:90%;margin-left:10px;}
+table.rubriques-cms tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des rubriques d'actualités */
+
+table.rubriques-actu { width:90%;}
+table.rubriques-actu tbody tr td { border-bottom:dashed 1px #999;}
+
+/* liste des pages d'actus  */
+
+table.contenu-actu { width:100%; white-space:normal;}
+table.contenu-actu tbody tr td { border-bottom:dashed 1px #999;}
+
+/* detail actualité */
+
+table.voir-une-actu { margin-left:10px;margin-top:20px; width:95%; white-space:normal;}
+
+/* detail rubrique */
+
+table.une-rubrique-cms{margin-left:10px;margin-top:20px; width:60%; white-space:normal;}
+
+/* detail secteur */
+
+table.visualiser-1-secteur { margin-left:10px;margin-top:20px; width:50%; white-space:normal; background:white;}
+
+
+/* liste de categories socio-professionelles */
+
+table.csp-list { width:40%; margin-top:15px; margin-left:10px;}
+table.csp-list thead tr th {width:70%; text-align:center;}
+table.csp-list thead tr th + th {width:30%;}
+
+/* livre d'or */
+
+table.message-livre-or { margin-left:10px;}
+table.message-livre-or tbody tr td { border-bottom:dashed 1px #999;}
+
+/* FORMULAIRE 
+====================================== */
+
+
+/* Formulaire de trajets */
+div.trajet-form { background:white;}
+div.trajet-form tr { height:30px; }
+div.trajet-form table tbody tr td input[type=text]{ margin-left:45px;}
+div.trajet-form table tbody tr td select { margin-left:45px;}
+div.trajet-form table tbody tr td select + select { margin-left:0;}
+div.regulier table#semaine-covoit { width:100%;}
+div.trajet-form div.regulier table#semaine-covoit tbody tr  { border-top: 1px solid #333; }
+/* #depot-trajet div.form-depot-trajet table#semaine-covoit tbody tr.lundi, */
+div.regulier table#semaine-covoit tbody tr td { border-right: 1px solid #333; margin-left: 0px; }
+div.regulier table#semaine-covoit tbody tr td.min ,
+div.regulier table#semaine-covoit tbody tr td.max {  padding-left: 15px; }
+div.regulier table#semaine-covoit tbody tr td input[type=text] { margin:0;}
+div.regulier table#semaine-covoit tbody tr td select { margin:0;}
+div.regulier table#semaine-covoit tbody tr td:last-child { border-right: none;}
+div.regulier table#semaine-covoit tbody tr td ul.radio_list { width:120%; padding-left:20px;}
+div.regulier table#semaine-covoit tbody tr td ul.radio_list li { width:100px;}
+div.regulier table#semaine-covoit tbody tr td ul.radio_list label { width:80px;}
+div.regulier table#semaine-covoit thead tr th { width:30%; border:none; text-align:center;}
+div.regulier table#semaine-covoit thead tr th + th { width:20%; }
+div.regulier table#semaine-covoit thead tr th + th + th { width:5%; }
+div.regulier table#semaine-covoit thead tr th + th + th + th { width:20%; }
+div.regulier table#semaine-covoit thead tr th + th + th + th + th { width:20%; }
+/* div.regulier table#semaine-covoit thead tr th + th + th + th + th { width:15%; }*/
+
+/* formulaire equipage */ 
+div#contenu div#equipage { background:white;}
+
+/* formulaire covoitureur */
+
+div#contenu div#covoitureur-form {background:white;}
+div#covoitureur-form table.covoit-profil tbody tr { height:30px;}
+
+/* formulaire covoitureur vehicule */
+
+div#covoitureur-vehicule-form { background:white; padding-bottom:10px;} 
+
+div#covoitureur-vehicule-form div { float:left; height:30px; margin-right:20px;margin-top:10px;width:210px;}
+div#covoitureur-vehicule-form div#modele { float:left; width:120px; margin:0;}
+div#covoitureur-vehicule-form div label { float:left;}
+div#covoitureur-vehicule-form div ul.radio_list {width:140px;}
+div#covoitureur-vehicule-form div ul.radio_list li { float:left;}
+div#covoitureur-vehicule-form div ul.radio_list li label { float:left;}
+div#covoitureur-vehicule-form div ul.radio_list li input{ float:left;}
+div#covoitureur-vehicule-form div input[type=text] { margin-left:10px;}
+div#covoitureur-vehicule-form div select { margin-left:10px;}
+
+/* formulaire contenu d'actualité */
+
+div#contenu-actualite-form { background:white;}
+
+/* formulaire de création de contenu */
+
+
+div#contenu-form { background:white;}
+
+input.contenu-chapo {width: 410px;}
+
+/*rubrique actualité */
+
+div.rubrique-actu-form { background:white;width:400px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                         -webkit-box-shadow: 5px 5px 5px #ccc;
+                         box-shadow: 5px 5px 5px #ccc;}
+div.rubrique-actu-form table { padding:10px;}
+div.rubrique-actu-form ul.radio_list { width:270px;}
+
+/*rubrique formulaire */
+
+div#rubrique-form { background:white;width:600px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                    -webkit-box-shadow: 5px 5px 5px #ccc;
+                    box-shadow: 5px 5px 5px #ccc;}
+div#rubrique-form table { padding:10px;}
+div#rubrique-form table th { width:30%;}
+div#rubrique-form ul.radio_list { width:270px;}
+
+/*etablissement formulaire */
+
+div#etablissement-form { background:white;}
+
+/* etablissement contact formulaire */
+
+div#etablissement-contact-form { background:white;}
+
+/* action  formulaire */
+
+div#contact-action-form { background:white;}
+div#etablissement-action-form { background:white;}
+div#covoitureur-action-form { background:white;}
+
+/* type d'action formulaire */
+
+
+div#type-action-form { background:white;width:800px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                      -webkit-box-shadow: 5px 5px 5px #ccc;
+                      box-shadow: 5px 5px 5px #ccc;
+                      padding: 10px;
+}
+div#type-action-form table { padding:10px;}
+div#type-action-form .label {width: 250px; font-weight:bold; float:left;}
+div#type-action-form .form-input {width: 350px; float:left;}
+
+/* etablissement horaire formulaire */
+
+div#etablissement-horaire-form{ background:white;width:400px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                                -webkit-box-shadow: 5px 5px 5px #ccc;
+                                box-shadow: 5px 5px 5px #ccc;}
+div#etablissement-horaire-form table { padding:10px;}
+
+/* etablissement status formulaire */
+
+div#status-etablissement-form {background:white;width:600px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                               -webkit-box-shadow: 5px 5px 5px #ccc;
+                               box-shadow: 5px 5px 5px #ccc; }
+div#status-etablissement-form table { padding:10px;}
+
+/* secteur etablissement formulaire */
+
+div#etablissement-secteur-form {background:white;width:350px;margin-left:20px;-moz-box-shadow: 5px 5px 5px #ccc;
+                                -webkit-box-shadow: 5px 5px 5px #ccc;
+                                box-shadow: 5px 5px 5px #ccc; }
+div#etablissement-secteur-form table { padding:10px;}
+
+/* communauté de commune */
+
+div#communaute-modif-form { background:white;padding:10px;}
+
+div#communaute-ajout-form {background:white;width:300px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                           -webkit-box-shadow: 5px 5px 5px #ccc;
+                           box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+div#evenement-form {background:white;width:500px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                    -webkit-box-shadow: 5px 5px 5px #ccc;
+                    box-shadow: 5px 5px 5px #ccc; padding:10px; }
+
+/* lieu */
+
+div#lieu-form { background:white;width:80%;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                -webkit-box-shadow: 5px 5px 5px #ccc;
+                box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+/* type de lieu */
+
+div#type-lieu-form { background:white;width:300px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                     -webkit-box-shadow: 5px 5px 5px #ccc;
+                     box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+/* lien site */
+
+div#connaissance-site-form {background:white;width:300px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                            -webkit-box-shadow: 5px 5px 5px #ccc;
+                            box-shadow: 5px 5px 5px #ccc; padding:10px;}
+/* fonction covoitureur */
+
+div#fonction-covoit-form { background:white;width:300px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                           -webkit-box-shadow: 5px 5px 5px #ccc;
+                           box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+/* categorie socio-professionelle */
+
+div#csp-form {background:white;width:300px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+              -webkit-box-shadow: 5px 5px 5px #ccc;
+              box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+
+/* livre d'or formulaire */
+
+div#livre-or-form {background:white;width:400px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                   -webkit-box-shadow: 5px 5px 5px #ccc;
+                   box-shadow: 5px 5px 5px #ccc; padding:10px;}
+div#livre-or-view {background:white;width:400px;margin-left:10px;-moz-box-shadow: 5px 5px 5px #ccc;
+                   -webkit-box-shadow: 5px 5px 5px #ccc;
+                   box-shadow: 5px 5px 5px #ccc; padding:10px;}
+
+/* Boutons 
+====================================== */
+p.retour-liste a, p.nouveau a, p.supprimer a, p.modifier a , p.retour-fiche a, p.liste a{
+
+    background-color:#333;
+    padding:3px 5px;	
+    border: none;
+    vertical-align:top;
+    color:white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size:1.3em;
+    font-weight:normal;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+    text-decoration:none;
+    font-family:'HelveticaLTCondensed',arial, sans-serif;
+    cursor:pointer;
+    margin-left:10px;
+    float:left;
+
+}
+
+input[type=submit], input[type=button] {
+
+    background-color:#333;
+    padding:2px 5px;	
+    border: none;
+    vertical-align:top;
+    color:white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size:1.3em;
+    font-weight:normal;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+    text-decoration:none;
+    font-family:'HelveticaLTCondensed',arial, sans-serif;
+    cursor:pointer;
+    margin-left:10px;
+    float:left;
+
+}
+
+input.integre[type=submit], input.integre[type=button] {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}    
+/* Login box 
+====================================== */
+
+div#log-box { width:300px; height:200px;position:absolute; top:50%; left:50%; margin-left:-160px;margin-top:-85px;border:1px solid black; padding:20px;}
+
+div#log-box form tr { height:30px;}
+
+div#log-box form th { text-align:left;}
+
+/* Déconnection 
+====================================== */
+
+div#admin-container { width:960px; margin: 0 auto; position:relative;}
+
+
+div.admin-connect { position : absolute; top : 5px; right : 5px; width:300px;}
+
+div.admin-connect p { float:right}
+
+div.admin-connect p a {	display:block;
+                        text-indent:-9999px;
+                        outline:none;
+                        width:50px;
+                        height:50px;
+                        margin-left:10px;
+                        background:url(../images/structure/exit.png) no-repeat;
+}
+
+
+
+
+/* style menu 
+====================================== */
+.admin-nav {
+    width: 960px;;
+    height:40px;	
+    position: relative;
+    font-family:'HelveticaLTCondensed',arial, sans-serif;
+    font-size:11px;
+    z-index:20;
+    margin-bottom:10px;
+}
+
+ul.topnav {
+    list-style: none;
+    padding: 0 20px;	
+    float: left;
+    width:920px;;
+    background: #222;
+    font-size: 1.2em;
+    background: #77AD0C;
+    -moz-box-shadow: 0px 5px 5px #ccc;
+    -webkit-box-shadow: 0px 5px 5px #ccc;
+    box-shadow: 0px 5px 5px #ccc;
+    height: 50px;
+}
+
+
+ul.topnav li {
+    float: left;
+    margin: 0;	
+    padding: 0 20px 0 0;
+
+    position: relative; /*--Declare X and Y axis base--*/
+
+
+}
+
+ul.topnav li:first-child  { margin-left:45px;}
+
+ul.topnav li a{
+    padding: 10px 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+ul.topnav li span { /*--Drop down trigger styles--*/
+    padding-right:5px;
+    height: 35px;
+    float: left;
+    /*background:url(../images/structure/fleche-blanche-bas.png) no-repeat right;*/
+}
+ul.topnav li span.subhover { cursor: pointer;} /*--Hover effect for trigger--*/
+
+ul.topnav li ul.subnav {
+    list-style: none;
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+    left: -15px; top: 37px;
+    background: #333;
+    margin: 0; padding: 0;
+    display: none;
+    float: left;
+    width: 170px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border: 1px solid #111;
+
+}
+ul.topnav li ul.subnav li{
+    margin: 0; padding: 0;
+    border-top: 1px solid #252525; /*--Create bevel effect--*/
+    border-bottom: 1px solid #444; /*--Create bevel effect--*/
+    clear: both;
+    width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+    float: left;
+    width: 150px;
+    background: #333 ;
+    padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+    background: #222; 
+}
+
+
+/* formulaires de recherche
+====================================== */
+div.form-tri { border:1px solid black; margin:10px; padding:10px; background:white;
+               -moz-box-shadow: 5px 5px 5px #ccc;
+               -webkit-box-shadow: 5px 5px 5px #ccc;
+               box-shadow: 5px 5px 5px #ccc;
+}
+
+
+div.form-tri input[type=submit] { margin-left:0 !important; margin-top:3px;}
+
+
+div.form-tri h2 { margin:0 !important; padding:0 !important;}
+
+div.form-tri label { font-size:16px;}
+
+div.form-tri div.equipage-search { float:left; margin-right:5px; padding-top:8px;}
+
+
+div.form-tri div.covoitureur-search { margin-top:10px; margin-right:30px;} 
+div.form-tri div.covoitureur-search, div.form-tri div.covoitureur-search p, div.form-tri div.covoitureur-search ul, div.form-tri div.covoitureur-search ul li { float:left;}
+div.form-tri div.covoitureur-search p { margin-right:5px; margin-top:0;}
+div.form-tri div.covoitureur-search p.label { margin-right:20px;}
+div.form-tri div.covoitureur-search input[type=button] { margin-top:3px;}
+div.form-tri div.covoit-radio p { height:20px;margin-bottom:0; width:200px; }
+div.form-tri div.covoit-info { padding-top:5px;}
+
+
+div.form-tri div.etab-search { float:left; margin-right:10px; padding-top:8px;}
+
+div.form-tri div.stat-search { margin-right:10px; padding-top:8px;}
+div.form-tri div.stat-search, div.form-tri div.stat-search p, div.form-tri div.stat-search label { float:left;}
+div.form-tri div.stat-search p { margin-right:5px; margin-top:0;}
+/* block de statistique 
+===================================== */
+
+div.block-stat { width:390px; border:1px solid black; float:left; margin:10px; padding:10px; ;}
+
+div.block-stat-covoitureur { width:390px; border:1px solid black; float:left; margin:10px; padding:10px;}
+
+table.stat-covoitureur td.label {color: #000; font-weight: normal;}
+table.stat-covoitureur td.label-titre {color: #000; font-weight: normal;}
+table.stat-covoitureur td.value {color: #000; font-weight: normal;}
+
+table.stat-mer td.label {color: #000; font-weight: normal;}
+table.stat-mer td.label-titre {color: #000; font-weight: normal;}
+table.stat-mer td.value {color: #000; font-weight: normal;}
+
+table.stat-covoitureur td.label {color: #000; font-weight: normal;}
+table.stat-covoitureur td.label-titre {color: #000; font-weight: normal;}
+table.stat-covoitureur td.value {color: #000; font-weight: normal;}
+
+div.block-stat h2, div.block-stat-covoitureur h2 { margin:0 !important; padding:0 !important;}
+
+div.content-container { margin:0 auto; width:890px;}
+
+div.content-container div + div + div + div  { height:200px; margin-bottom:20px;}
+
+div.content-container p.lien-pdf,
+div.content-container p.lien-csv { float :left; padding:0 !important;margin:10px !important; }
+
+div.content-container p.lien-pdf a,
+div.content-container p.lien-csv a { display:block; text-decoration:none; color: #333; background:url(../images/structure/fleche-gris.png) left no-repeat; padding-left:15px;}
+
+div.content-container p + p {clear:both;}
+
+/* block de liste de covoitureur 
+===================================== */
+div#contenu p.lien-csv a { display:block; text-decoration:none; color: #333; background:url(../images/structure/fleche-gris.png) left no-repeat; padding-left:15px;}
+
+/* block CMS 
+===================================== */
+table.cms span,
+#cms span {
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: .2em 0 .2em 0;
+}
+
+table.cms span.file,
+#cms span.file {
+    background-image: url(../images/page_white_text.png);
+    padding: 20px;
+}
+
+
+div.cms span.file a, div#cms span.file a { 	padding:3px 5px 3px 25px;
+                                            background:url(../images/page_white_text.png) 5px no-repeat #333;
+                                            border: none;
+                                            vertical-align:top;
+                                            color:white;
+                                            -moz-border-radius: 5px;
+                                            -webkit-border-radius: 5px;
+                                            border-radius: 5px;
+                                            font-size:1.3em;
+                                            font-weight:normal;
+                                            -moz-box-shadow: 5px 5px 5px #ccc;
+                                            -webkit-box-shadow: 5px 5px 5px #ccc;
+                                            box-shadow: 5px 5px 5px #ccc;
+                                            text-decoration:none;
+                                            font-family:'HelveticaLTCondensed',arial, sans-serif;
+                                            cursor:pointer;
+
+
+}
+
+
+table.cms span.file-under,
+#cms span.file-under {
+    background-image: url(../images/page_under.png);
+    padding-left:35px;
+}
+
+div.cms span.folder a, div#cms span.folder a { 	padding:3px 5px 3px 25px;
+                                                background:url(../images/folder.png) 5px no-repeat #333;
+                                                border: none;
+                                                vertical-align:top;
+                                                color:white;
+                                                -moz-border-radius: 5px;
+                                                -webkit-border-radius: 5px;
+                                                border-radius: 5px;
+                                                font-size:1.3em;
+                                                font-weight:normal;
+                                                -moz-box-shadow: 5px 5px 5px #ccc;
+                                                -webkit-box-shadow: 5px 5px 5px #ccc;
+                                                box-shadow: 5px 5px 5px #ccc;
+                                                text-decoration:none;
+                                                font-family:'HelveticaLTCondensed',arial, sans-serif;
+                                                cursor:pointer;
+
+
+}
+
+table.cms span.folder {	
+    padding-left:20px;
+    background-image: url(../images/folder.png);
+}
+
+table.cms { width:30%}
+table.cms tr.menu td {width:70%;}
+table.cms tr.menu td + td { width:30%;}
+
+
+
+tr.menu a.lien-cms-up {
+    display:block;
+    float: right;
+    width:16px;
+    height:16px;
+    background:url(../images/cms-up.png) no-repeat;
+}
+tr.menu a.lien-cms-down {
+    display:block;
+    float: right;
+    width:16px;
+    height:16px;
+    background:url(../images/cms-down.png) no-repeat;
+}
+
+tr.page a.lien-cms-up {
+    display:block;
+    float: right;
+    width:16px;
+    height:16px;
+    background:url(../images/cms-up-vert.png) no-repeat;
+}
+tr.page a.lien-cms-down {
+    display:block;
+    float: right;
+    width:16px;
+    height:16px;
+    background:url(../images/cms-down-vert.png) no-repeat;
+}
+
+td.edit a { display:block; width:16px; height:16px; background:url(../images/editer.png); text-indent:-9999px;outline:none;}
+
+td.view a { display:block; width:16px; height:16px; background:url(../images/visualiser.png); text-indent:-9999px;outline:none;}
+
+td.suppr a, p.suppr a { display:block; width:16px; height:16px; background:url(../images/supprimer.png); text-indent:-9999px;outline:none;}
+
+td.liste-trajet a { display:block; width:16px; height:16px; background:url(../images/trajet-liste.png); text-indent:-9999px;outline:none;}
+
+td.trajet-ajout a { display:block; width:16px; height:16px; background:url(../images/trajet-ajout.png); text-indent:-9999px;outline:none;}
+
+td.trajet-ajout-existe a,td.trajet-ajout-existe p{ display:block; width:16px; height:16px; background:url(../images/trajet-ajout-rouge.png); text-indent:-9999px;outline:none;}
+
+td.nouveau-trajet a { display:block; width:16px; height:16px; background:url(../images/trajet-nouveau.png); text-indent:-9999px;outline:none;}
+
+td.liste-action a { display:block; width:16px; height:16px; background:url(../images/action-liste.png); text-indent:-9999px;outline:none;}
+
+td.liste-vehicule a { display:block; width:16px; height:16px; background:url(../images/vehicule-liste.png); text-indent:-9999px;outline:none;}
+
+td.liste-covoitureur a { display:block; width:16px; height:16px; background:url(../images/covoitureur-liste.png); text-indent:-9999px;outline:none;}
+
+td.equipage-nouveau a { display:block; width:16px; height:16px; background:url(../images/equipage-edition.png); text-indent:-9999px;outline:none;}
+
+/* pagination 
+======================================= */
+
+div.pagination { margin-top:15px;}
+
+div.pagination a:link { color:#333; margin:3px;}
+div.pagination a:visited { color:#333;}
+div.pagination a:hover { color:#77AD0C;}
+div.pagination a:active { color:#333;outline:none;}
+
+div.pagination_desc { clear:both;}
+
+/* footer
+======================================= */
+
+div#footer { height:40px; background:#77AD0C; width:960px; margin:0 auto;}
+div#footer a { float:right; color:white; text-decoration:none; margin-right:10px; margin-top:8px;}
+
+
+/* message flash
+======================================= */
+
+.flash_notice {height:20px; background:#dfe79c;}
+
+/* formulaire de recherche trajet
+======================================= */
+
+div.form-tri-trajet { border:1px solid black; margin:10px; padding:10px; background:white; width:90%;
+                      -moz-box-shadow: 5px 5px 5px #ccc;
+                      -webkit-box-shadow: 5px 5px 5px #ccc;
+                      box-shadow: 5px 5px 5px #ccc;
+}
+
+.form-tri-trajet label,.form-tri label { font-weight:bold; }
+
+#trajet_form_part1 {
+   padding-left: 10px;
+    float:left;
+   width:40%
+}
+#trajet_form_part2 {
+   float:left;
+   width:50%
+}
+#trajet_form_part3 {
+   padding-left: 10px;
+    float:left;
+   width:90%
+}
+
+#div_destination_autre_lieu,#div_depart_autre_lieu {
+    float:left;
+}
+.form-tri-trajet label.interne,.form-tri label.interne {
+    float:left;
+    padding-left: 15px;
+}
+.trajet_form_part1_inclu, 
+.trajet_form_part2_inclu,
+.trajet_form_part3_inclu{
+    padding: 3px;
+}
+
+#rechercheavancee a.btnrecherchestandard { color:#87888A; text-decoration:none; background:url(../images/structure/fleche-gris.png) no-repeat; padding-left:15px; background-position:2px 2px;}
+
+#rechercheavancee a.btnrecherchestandard:hover { color:#111; text-decoration:none; }
+
+
+#trajet-regulier, #trajet-occasionnel{padding-left: 10px; }
+
+/* Affichage autocomplete lieu */        
+.ui-widget-content {
+    background: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #222222;
+}
+.ui-menu {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 2px;
+}
+.ui-autocomplete {
+    cursor: default;
+    position: absolute;
+}
+#trajet-regulier, #trajet-occasionnel, #trajet-psa {padding-left: 10px; }
+
+table.ss-tab {width: 95%; }
+table td.partage2 {width: 45%; vertical-align: top ; }
+
+
+/* specifique trajet et commentaire C+ */
+table tr.desc_spec_cp {
+    background-color: red;
+    color: white;
+}
+
+div#calcul-prix { 
+    width:85px;
+    background:#ff6600; 
+    color:#FFF; 
+    padding:5px; 
+    font-size:1.4em; 
+    -moz-border-radius: 20px;	
+    -webkit-border-radius: 20px;	
+    border-radius: 20px; 
+    font-family:'HelveticaLTCondensed',arial, sans-serif; 
+    text-decoration:none; 
+    border:0; 
+    font-weight:normal;
+    cursor:pointer; 
+    margin-bottom:10px;
+}
+
+OPTION.dejautilise,
+OPTION.dejautilise selected{
+    background-color: red;
+    color: white;
+    text-decoration: line-through;
+}
+
+.error_list {
+    color: red;
+}

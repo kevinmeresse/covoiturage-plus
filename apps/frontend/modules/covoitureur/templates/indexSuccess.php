@@ -1,0 +1,2 @@
+<a href="<?php echo url_for('covoitureur/covoitureurView?id_utilisateur=2') ?>">test visualisation fiche covoitureur</a><br />
+<a href="<?php echo url_for('covoitureur/covoitureurEdit?id_utilisateur=2') ?>">test édition fiche covoitureur</a><br />

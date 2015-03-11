@@ -1,0 +1,6 @@
+/* 
+ * Fonctions utilisés par gmap
+ */
+
+
+

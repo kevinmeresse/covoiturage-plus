@@ -1,0 +1,148 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  max_trajet_liste:              10
+  max_covoitureur_list:          10
+  max_photo_covoitureur_list:    10
+  max_trajet_list:               10
+  max_trajet_alerte:             10
+  max_trajet_equipage_list:      10
+  max_covoitureur_vehicule_list: 10
+  max_equipage_list:             10
+  max_lieu_list:                 10
+  max_livre_or_list:             10
+  max_actualite_list:            10
+  max_actualite_rubrique_list:   10
+  max_rubrique_list:             10
+  max_contenu_list:              10
+  max_evenement_list:            10
+  max_lien_site_list:            25
+  max_covoitureur_fonction_list: 25
+  max_csp_list:                  10
+  max_etablissement_list:        20
+  max_etablissement_autcmp_list: 20
+  max_raison_sociale_list:       10
+  
+  #nombre max pour stat sur domiciliation
+  stat_nb_domicile:  5
+  stat_nb_ville:  5
+ 
+  #repartition par tranche d'age
+  tranche_age_1: 18
+  tranche_age_2: 25
+  tranche_age_3: 34
+  tranche_age_4: 45
+  tranche_age_5: 60
+  
+  #mot de passe pa défaut à la creation de compte en BO
+  new_password: 'bienvenue'
+  
+  #information sur les mails envoyés à partir du BO
+  new_mer_mail_subject: 'Relance sur Mise en relation'
+  new_mer_mail_texte :  'Bonjour,<br><br>Vous avez récemment été contacté via le site Covoiturage+ pour partager vos trajets. A ce jour, vous n’avez pas confirmé votre mise en relation.<br><br>Pourriez-vous nous informer de votre situation actuelle :<br>   - Soit en reprenant le mail de mise en relation et en cliquant sur Oui (j’accepte ce covoiturage) ou Non.<br>   - Soit en reprenant le mail de mise en relation et en cliquant sur Oui (j’accepte ce covoiturage) ou Non.<br><br>Cela nous permettra de constituer votre équipage le cas échéant, et de vous apporter le meilleur service.<br><br><br>Bonne route avec Covoiturage+ !'
+  
+  #dimension des popup
+  larg_popup:          600
+  haut_popup:          600
+  larg_popup_etb:      1000
+  haut_popup_etb:      900
+  larg_popup_action:   900
+  haut_popup_action:   400
+  larg_popup_contact:  800
+  haut_popup_contact:  800
+  larg_popup_covoit:   1000
+  haut_popup_covoit:   800
+  larg_popup_trajet:   1000
+  haut_popup_trajet:   800
+  larg_popup_equipage: 900
+  haut_popup_equipage: 800
+
+
+  #messages affichés
+  mess_supp_action_etb:       'l`action liée à l`établissement a été supprimée'
+  mess_supp_action_ctc:       'l`action liée au contact a été supprimée'
+  mess_supp_action_cv:        'l`action liée à l`inscrit a été supprimée'
+  mess_supp_contact_etb:      'le contact a été supprimée'
+  mess_action_auto_equipage:  'action générée automatiquement au niveau de l’écran équipage'
+  
+  #etats des mises en relation (=> statut incrit pour c+)
+  statut_mer_0_value: 0
+  statut_mer_0_mess:  'à contacter'
+  statut_mer_0_coul:  '#FFFFF'
+  statut_mer_1_value: 1
+  statut_mer_1_mess:  'actif'
+  statut_mer_1_coul:  '#87fb77'
+  statut_mer_2_value: 2
+  statut_mer_2_mess:  'refus'
+  statut_mer_2_coul:  '#d41b1f'
+  statut_mer_3_value: 3
+  statut_mer_3_mess:  'à l`essai'
+  statut_mer_3_coul:  '#ecaf4f'
+  statut_mer_4_value: 4
+  statut_mer_4_mess:  'en attente'
+  statut_mer_4_coul:  '#4f5dec'
+  
+  #fichier de sortie csv
+  rep_fic_csv:        "files/csv/"
+  fic_stat_csv:       "stat_cp"
+  fic_covoit_csv:     "liste_covoit_cp"
+  
+  #format des dates en affichage
+  fr:
+    format_date_court:         "d-M-Y"
+    format_date_court_horaire: "d-M-Y H:m:s"
+    format_date_long:          "l, d M Y"
+    format_date_long_horaire:  "l, d M Y H:m:s"
+  
+  # valeurs pour les calculs lié à l'ADEME
+  ademe_nb_jour:            215
+  ademe_nb_aller_retour_an: 207
+  ademe_co2:                93.5
+  
+  google_maps_api:
+    keys:
+      www.roulezmalin.com:            'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+      localhost:                      'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+      default:                        'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+      covoiturage.dell-seve:          'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+
+
+  #adresse de base de covoiturage plus pour centrage de la carte Google Map
+  covoiturage_adresse_map:            '20 rue d’Isly, 35000 Rennes, France'
+  
+  #profil utilisateur et routage au moment du login
+  sf_guard_plugin:
+        profile_class:                sfGuardUserProfile
+        profile_field_name:           id_user
+        success_signin_url:           accueil/index
+        remember_key_expiration_age:  2592000   # 30 days in seconds
+        remember_cookie_name:         myAppRememberMe
+        
+  #libellé pour pas de société (quand cp_etablissement_id == 0
+  libel_pas_societe:                  "Particulier"
+  
+  #libellé pour pas de Raison sociale (quand cp_etablissement_pere_id == 0
+  libel_pas_societe_raison_sociale:   "Pas de RS"
+  
+  #couleur par defaut pour les actions en cas de null
+  coul_action_defaut:                 'FFFFFF'
+  
+    
+  #gestion des actions liées au détachement d'un trajet d'un équipage
+  id_type_act_statut_refus:    5
+  id_type_act_statut_acontacter: 1
+  detail_detach_trajet_equipage:  "detachement du trajet de l'équipage"
+  detach_trajet_action_id:     100
+  
+  #gestion des actions liées à l'attachement d'un trajet d'un équipage
+  detail_attach_trajet_equipage:  "attachement du trajet à l'équipage"
+  attach_trajet_action_id:     101
+  
+  detail_attach_trajet_princ_equipage:  "attachement du trajet à l'équipage comme trajet inistial"
+  attach_trajet_princ_action_id:     102
+  
+  #longeur du select box des lieux (en px)
+  long_select_box_lieu:        250
+  

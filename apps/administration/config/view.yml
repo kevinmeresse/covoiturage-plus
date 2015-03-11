@@ -1,0 +1,31 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main-bo.css,/sfJqueryReloadedPlugin/css/ui-lightness/jquery-ui-1.7.3.custom.css]
+
+  javascripts:    [ckeditor/ckeditor.js,/sfCkPlugin/js/sfCkPlugin.js,/sfJqueryReloadedPlugin/js/jquery-1.4.2.min.js,/sfJqueryReloadedPlugin/js/plugins/jquery-ui-1.8.2.custom.min.js,menu-horizontal.js, jquery.ui.datepicker-fr.js, back.js]
+
+  has_layout:     true
+  layout:         layout
+
+signinSuccess:
+  layout:         login-layout
+
+autocompleteSuccess:
+  has_layout:     false
+
+statAccueilCsvSuccess:
+  has_layout: off
+  http_metas:
+    content-type: application/msexcel

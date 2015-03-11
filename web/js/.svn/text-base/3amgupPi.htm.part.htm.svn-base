@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html
+xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr-FR"><head
+profile="http://gmpg.org/xfn/11"><link
+rel='stylesheet' href='http://www.remy-solnais.com/wp-content/plugins/wp-minify/min/?f=wp-content/plugins/contact-form-7/styles.css,wp-content/plugins/slimbox-plugin/slimbox/slimbox.css&amp;m=1300089042' type='text/css' media='screen' /> <script type='text/javascript' src='http://www.remy-solnais.com/wp-content/plugins/wp-minify/min/?f=wp-content/themes/master/jquery.min.js,wp-content/themes/master/jquery.validate.min.js,wp-includes/js/l10n.js,wp-includes/js/jquery/jquery.js,wp-content/plugins/flv-embed/swfobject.js,wp-content/plugins/slimbox-plugin/slimbox/mootools.x.js,wp-content/plugins/slimbox-plugin/slimbox/slimbox.js,wp-content/plugins/contact-form-7/jquery.form.js,wp-content/plugins/contact-form-7/scripts.js,wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/si_captcha.js&amp;m=1300438226'></script> <meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Rem's Blog</title><style type="text/css" media="screen">@import url( http://www.remy-solnais.com/wp-content/themes/master/style.css );</style><link
+rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.remy-solnais.com/feed/" /><link
+rel="alternate" type="text/xml" title="RSS .92" href="http://www.remy-solnais.com/feed/rss/" /><link
+rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.remy-solnais.com/feed/atom/" /><link
+rel="pingback" href="http://www.remy-solnais.com/xmlrpc.php" /><link
+rel='archives' title='mai 2011' href='http://www.remy-solnais.com/2011/05/' /><link
+rel='archives' title='avril 2011' href='http://www.remy-solnais.com/2011/04/' /><link
+rel='archives' title='février 2011' href='http://www.remy-solnais.com/2011/02/' /><link
+rel='archives' title='décembre 2010' href='http://www.remy-solnais.com/2010/12/' /><link
+rel='archives' title='août 2010' href='http://www.remy-solnais.com/2010/08/' /><link
+rel='archives' title='juin 2010' href='http://www.remy-solnais.com/2010/06/' /><link
+rel='archives' title='septembre 2009' href='http://www.remy-solnais.com/2009/09/' /><link
+rel='archives' title='août 2009' href='http://www.remy-solnais.com/2009/08/' /><link
+rel='archives' title='juin 2009' href='http://www.remy-solnais.com/2009/06/' /><link
+rel='archives' title='avril 2009' href='http://www.remy-solnais.com/2009/04/' /><link
+rel='archives' title='février 2009' href='http://www.remy-solnais.com/2009/02/' /><link
+rel='archives' title='janvier 2009' href='http://www.remy-solnais.com/2009/01/' /><link
+rel='archives' title='décembre 2008' href='http://www.remy-solnais.com/2008/12/' /><link
+rel='archives' title='septembre 2008' href='http://www.remy-solnais.com/2008/09/' /><link
+rel='archives' title='juin 2008' href='http://www.remy-solnais.com/2008/06/' /><link
+rel='archives' title='mai 2008' href='http://www.remy-solnais.com/2008/05/' /><link
+rel='archives' title='avril 2008' href='http://www.remy-solnais.com/2008/04/' /><link
+rel='archives' title='mars 2008' href='http://www.remy-solnais.com/2008/03/' /><link
+rel='archives' title='décembre 2007' href='http://www.remy-solnais.com/2007/12/' /><link
+rel="alternate" type="application/rss+xml" title="Rem&#039;s Blog &raquo; jQuery et datePicker Flux des commentaires" href="http://www.remy-solnais.com/jquery-et-datepicker/feed/" /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.remy-solnais.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.remy-solnais.com/wp-includes/wlwmanifest.xml" /><link
+rel='index' title='Rem&#039;s Blog' href='http://www.remy-solnais.com/' /><link
+rel='start' title='Développeur et développeuse &#8230;. @ votre WampServer' href='http://www.remy-solnais.com/developpeur-et-developpeuse-votre-wampserver/' /><link
+rel='prev' title='Windows 7 (seven)' href='http://www.remy-solnais.com/windows-7-seven/' /><link
+rel='next' title='PHP5 Objet (POO)' href='http://www.remy-solnais.com/php5-objet-poo/' /><meta
+name="generator" content="WordPress 3.1" /><link
+rel='canonical' href='http://www.remy-solnais.com/jquery-et-datepicker/' /><link
+rel='shortlink' href='http://www.remy-solnais.com/?p=55' /> <script type="text/javascript">//
+var _wpcf7 = { cached: 1 };
+//</script> </head><body><div
+id="wraper"><div
+id="header"><div
+id="logo"><h1><a
+href="http://www.remy-solnais.com/">Rem&#039;s Blog</a></h1><h2>Blog de R&eacute;my SOLNAIS</h2></div><div
+id="menu"><ul><li><a
+href="http://www.remy-solnais.com/">Accueil</a></li><li
+class="page_item page-item-260"><a
+href="http://www.remy-solnais.com/contactez-moi/" title="Contactez moi">Contactez moi</a></li><li
+class="page_item page-item-23"><a
+href="http://www.remy-solnais.com/tutoriaux/" title="Tutoriaux">Tutoriaux</a></li><li
+class="page_item page-item-2"><a
+href="http://www.remy-solnais.com/a-propos/" title="A propos">A propos</a></li></ul></div></div><div
+id="content"><div
+id="sidebar"><div
+class="widget"><h2 class="header">Catégories</h2><ul><li
+class="cat-item cat-item-7"><a
+href="http://www.remy-solnais.com/categorie/apachephp/" title="Voir tous les articles classés dans apache/PHP">apache/PHP</a></li><li
+class="cat-item cat-item-83"><a
+href="http://www.remy-solnais.com/categorie/april/" title="Voir tous les articles classés dans April">April</a></li><li
+class="cat-item cat-item-3"><a
+href="http://www.remy-solnais.com/categorie/css/" title="CSS">CSS</a></li><li
+class="cat-item cat-item-8"><a
+href="http://www.remy-solnais.com/categorie/developpement/" title="Voir tous les articles classés dans Développement">Développement</a></li><li
+class="cat-item cat-item-4"><a
+href="http://www.remy-solnais.com/categorie/fonctions-php/" title="fonctions PHP">fonctions PHP</a></li><li
+class="cat-item cat-item-1"><a
+href="http://www.remy-solnais.com/categorie/general/" title="général">général</a></li><li
+class="cat-item cat-item-9"><a
+href="http://www.remy-solnais.com/categorie/internet/" title="Voir tous les articles classés dans Internet">Internet</a></li><li
+class="cat-item cat-item-6"><a
+href="http://www.remy-solnais.com/categorie/javascript/" title="JavaScript">JavaScript</a><ul
+class='children'><li
+class="cat-item cat-item-54"><a
+href="http://www.remy-solnais.com/categorie/javascript/jquery-javascript/" title="Voir tous les articles classés dans jQuery">jQuery</a></li></ul></li><li
+class="cat-item cat-item-58"><a
+href="http://www.remy-solnais.com/categorie/linux/" title="Voir tous les articles classés dans Linux">Linux</a><ul
+class='children'><li
+class="cat-item cat-item-59"><a
+href="http://www.remy-solnais.com/categorie/linux/ubuntu/" title="Voir tous les articles classés dans Ubuntu">Ubuntu</a></li></ul></li><li
+class="cat-item cat-item-76"><a
+href="http://www.remy-solnais.com/categorie/mac/" title="Voir tous les articles classés dans mac">mac</a></li><li
+class="cat-item cat-item-55"><a
+href="http://www.remy-solnais.com/categorie/mysql/" title="Voir tous les articles classés dans MySQL">MySQL</a></li><li
+class="cat-item cat-item-46"><a
+href="http://www.remy-solnais.com/categorie/php-5/" title="Voir tous les articles classés dans PHP 5">PHP 5</a></li><li
+class="cat-item cat-item-75"><a
+href="http://www.remy-solnais.com/categorie/reseau/" title="Voir tous les articles classés dans Réseau">Réseau</a></li><li
+class="cat-item cat-item-5"><a
+href="http://www.remy-solnais.com/categorie/scripts-php/" title="Scripts PHP">Scripts PHP</a></li><li
+class="cat-item cat-item-24"><a
+href="http://www.remy-solnais.com/categorie/windows/" title="Voir tous les articles classés dans Windows">Windows</a></li></ul></div><div
+class="widget"><h2 class="header">&nbsp;</h2><div
+id="calendar_wrap"><table
+id="wp-calendar" summary="Calendrier"><caption>août 2011</caption><thead><tr><th
+scope="col" title="Lundi">L</th><th
+scope="col" title="Mardi">Ma</th><th
+scope="col" title="Mercredi">Me</th><th
+scope="col" title="Jeudi">J</th><th
+scope="col" title="Vendredi">V</th><th
+scope="col" title="Samedi">S</th><th
+scope="col" title="Dimanche">D</th></tr></thead><tfoot><tr><td
+colspan="3" id="prev"><a
+href="http://www.remy-solnais.com/2011/05/" title="Voir les articles pour mai 2011">&laquo; mai</a></td><td
+class="pad">&nbsp;</td><td
+colspan="3" id="next" class="pad">&nbsp;</td></tr></tfoot><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td
+id="today">9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>31</td><td
+class="pad" colspan="4">&nbsp;</td></tr></tbody></table></div></div><div
+class="widget"><h2 class="header">Articles récents</h2><ul><li><a
+href="http://www.remy-solnais.com/gestion-des-exceptions-dans-un-probleme-de-webservice-en-php/" title="Gestion des exceptions dans un problème de WebService en PHP">Gestion des exceptions dans un problème de WebService en PHP</a></li><li><a
+href="http://www.remy-solnais.com/journee-mondiale-contre-les-drm/" title="Journée mondiale contre les DRM">Journée mondiale contre les DRM</a></li><li><a
+href="http://www.remy-solnais.com/ubuntu-11-04-natty-narwhal/" title="ubuntu 11.04 : Natty Narwhal">ubuntu 11.04 : Natty Narwhal</a></li><li><a
+href="http://www.remy-solnais.com/abus-de-bande-passante/" title="Abus de bande passante">Abus de bande passante</a></li><li><a
+href="http://www.remy-solnais.com/ajax-xmlhttprequest-et-json/" title="AJAX, XMLHttpRequest et JSON">AJAX, XMLHttpRequest et JSON</a></li><li><a
+href="http://www.remy-solnais.com/nessus-scan-reseau-et-test-de-securite/" title="Nessus, scan réseau et test de sécurité">Nessus, scan réseau et test de sécurité</a></li><li><a
+href="http://www.remy-solnais.com/jquery-ajax-et-json/" title="jQuery AJAX et JSON">jQuery AJAX et JSON</a></li><li><a
+href="http://www.remy-solnais.com/jquery-requete-ajax/" title="jQuery requête AJAX">jQuery requête AJAX</a></li><li><a
+href="http://www.remy-solnais.com/linux-ubuntu-10-04-lts-lucid-lynx/" title="Linux Ubuntu 10.04 LTS Lucid Lynx">Linux Ubuntu 10.04 LTS Lucid Lynx</a></li><li><a
+href="http://www.remy-solnais.com/forum-php-2010-appel-au-conferenciers/" title="Forum PHP 2010 : appel au conférenciers">Forum PHP 2010 : appel au conférenciers</a></li></ul></div><div
+class="widget"><h2 class="header">Archives</h2><ul><li><a
+href='http://www.remy-solnais.com/2011/05/' title='mai 2011'>mai 2011</a></li><li><a
+href='http://www.remy-solnais.com/2011/04/' title='avril 2011'>avril 2011</a></li><li><a
+href='http://www.remy-solnais.com/2011/02/' title='février 2011'>février 2011</a></li><li><a
+href='http://www.remy-solnais.com/2010/12/' title='décembre 2010'>décembre 2010</a></li><li><a
+href='http://www.remy-solnais.com/2010/08/' title='août 2010'>août 2010</a></li><li><a
+href='http://www.remy-solnais.com/2010/06/' title='juin 2010'>juin 2010</a></li><li><a
+href='http://www.remy-solnais.com/2009/09/' title='septembre 2009'>septembre 2009</a></li><li><a
+href='http://www.remy-solnais.com/2009/08/' title='août 2009'>août 2009</a></li><li><a
+href='http://www.remy-solnais.com/2009/06/' title='juin 2009'>juin 2009</a></li><li><a
+href='http://www.remy-solnais.com/2009/04/' title='avril 2009'>avril 2009</a></li><li><a
+href='http://www.remy-solnais.com/2009/02/' title='février 2009'>février 2009</a></li><li><a
+href='http://www.remy-solnais.com/2009/01/' title='janvier 2009'>janvier 2009</a></li><li><a
+href='http://www.remy-solnais.com/2008/12/' title='décembre 2008'>décembre 2008</a></li><li><a
+href='http://www.remy-solnais.com/2008/09/' title='septembre 2008'>septembre 2008</a></li><li><a
+href='http://www.remy-solnais.com/2008/06/' title='juin 2008'>juin 2008</a></li><li><a
+href='http://www.remy-solnais.com/2008/05/' title='mai 2008'>mai 2008</a></li><li><a
+href='http://www.remy-solnais.com/2008/04/' title='avril 2008'>avril 2008</a></li><li><a
+href='http://www.remy-solnais.com/2008/03/' title='mars 2008'>mars 2008</a></li><li><a
+href='http://www.remy-solnais.com/2007/12/' title='décembre 2007'>décembre 2007</a></li></ul></div><div
+class="widget"><h2 class="header">Méta</h2><ul><li><a
+href="http://www.remy-solnais.com/wp-login.php">Connexion</a></li><li><a
+href="http://www.remy-solnais.com/feed/" title="Suivez ce site par syndication RSS 2.0">Flux <abbr
+title="Really Simple Syndication">RSS</abbr> des articles</a></li><li><a
+href="http://www.remy-solnais.com/comments/feed/" title="Les derniers commentaires pour tous les articles, au format RSS"><abbr
+title="Really Simple Syndication">RSS</abbr> des commentaires</a></li><li><a
+href="http://wordpress.org/" title="Propulsé par WordPress, plate-forme de publication personnelle sémantique de pointe.">WordPress.org</a></li></ul></div><div
+class="widget"><h2 class="header">Mots-clefs</h2><div
+class="tagcloud"><a
+href='http://www.remy-solnais.com/tag/10100/' class='tag-link-31' title='1 sujet' style='font-size: 8pt;'>10^100</a> <a
+href='http://www.remy-solnais.com/tag/ancre-html/' class='tag-link-29' title='1 sujet' style='font-size: 8pt;'>ancre html</a> <a
+href='http://www.remy-solnais.com/tag/calendrier-javascript/' class='tag-link-43' title='2 sujets' style='font-size: 10.8636363636pt;'>calendrier JavaScript</a> <a
+href='http://www.remy-solnais.com/tag/chrome/' class='tag-link-17' title='1 sujet' style='font-size: 8pt;'>chrome</a> <a
+href='http://www.remy-solnais.com/tag/classe-php/' class='tag-link-50' title='4 sujets' style='font-size: 14.3636363636pt;'>classe php</a> <a
+href='http://www.remy-solnais.com/tag/compatibilite-navigateur/' class='tag-link-27' title='2 sujets' style='font-size: 10.8636363636pt;'>compatibilité navigateur</a> <a
+href='http://www.remy-solnais.com/tag/css/' class='tag-link-3' title='4 sujets' style='font-size: 14.3636363636pt;'>CSS</a> <a
+href='http://www.remy-solnais.com/tag/detection-navigateur/' class='tag-link-22' title='2 sujets' style='font-size: 10.8636363636pt;'>détection navigateur</a> <a
+href='http://www.remy-solnais.com/tag/developpement/' class='tag-link-8' title='14 sujets' style='font-size: 22pt;'>Développement</a> <a
+href='http://www.remy-solnais.com/tag/datepicker/' class='tag-link-37' title='3 sujets' style='font-size: 12.7727272727pt;'>datepicker</a> <a
+href='http://www.remy-solnais.com/tag/datepicker-francais/' class='tag-link-41' title='2 sujets' style='font-size: 10.8636363636pt;'>datePicker français</a> <a
+href='http://www.remy-solnais.com/tag/datepicker-french/' class='tag-link-42' title='2 sujets' style='font-size: 10.8636363636pt;'>datePicker french</a> <a
+href='http://www.remy-solnais.com/tag/firefox/' class='tag-link-40' title='2 sujets' style='font-size: 10.8636363636pt;'>firefox</a> <a
+href='http://www.remy-solnais.com/tag/google/' class='tag-link-16' title='3 sujets' style='font-size: 12.7727272727pt;'>google</a> <a
+href='http://www.remy-solnais.com/tag/googlecom/' class='tag-link-34' title='3 sujets' style='font-size: 12.7727272727pt;'>google.com</a> <a
+href='http://www.remy-solnais.com/tag/googlefr/' class='tag-link-33' title='2 sujets' style='font-size: 10.8636363636pt;'>google.fr</a> <a
+href='http://www.remy-solnais.com/tag/html/' class='tag-link-28' title='4 sujets' style='font-size: 14.3636363636pt;'>html</a> <a
+href='http://www.remy-solnais.com/tag/internet/' class='tag-link-9' title='1 sujet' style='font-size: 8pt;'>Internet</a> <a
+href='http://www.remy-solnais.com/tag/internet-explorer/' class='tag-link-39' title='2 sujets' style='font-size: 10.8636363636pt;'>internet explorer</a> <a
+href='http://www.remy-solnais.com/tag/javascript/' class='tag-link-6' title='10 sujets' style='font-size: 19.7727272727pt;'>JavaScript</a> <a
+href='http://www.remy-solnais.com/tag/jquery/' class='tag-link-35' title='10 sujets' style='font-size: 19.7727272727pt;'>JQUERY</a> <a
+href='http://www.remy-solnais.com/tag/js/' class='tag-link-23' title='9 sujets' style='font-size: 19.1363636364pt;'>js</a> <a
+href='http://www.remy-solnais.com/tag/linux/' class='tag-link-58' title='3 sujets' style='font-size: 12.7727272727pt;'>Linux</a> <a
+href='http://www.remy-solnais.com/tag/live/' class='tag-link-11' title='1 sujet' style='font-size: 8pt;'>live</a> <a
+href='http://www.remy-solnais.com/tag/messenger/' class='tag-link-12' title='1 sujet' style='font-size: 8pt;'>messenger</a> <a
+href='http://www.remy-solnais.com/tag/msn/' class='tag-link-13' title='1 sujet' style='font-size: 8pt;'>msn</a> <a
+href='http://www.remy-solnais.com/tag/navigateur/' class='tag-link-15' title='3 sujets' style='font-size: 12.7727272727pt;'>Navigateur</a> <a
+href='http://www.remy-solnais.com/tag/navigateur-internet/' class='tag-link-18' title='2 sujets' style='font-size: 10.8636363636pt;'>navigateur internet</a> <a
+href='http://www.remy-solnais.com/tag/php/' class='tag-link-47' title='11 sujets' style='font-size: 20.4090909091pt;'>PHP</a> <a
+href='http://www.remy-solnais.com/tag/php-5/' class='tag-link-46' title='10 sujets' style='font-size: 19.7727272727pt;'>PHP 5</a> <a
+href='http://www.remy-solnais.com/tag/php-objet/' class='tag-link-48' title='7 sujets' style='font-size: 17.5454545455pt;'>PHP objet</a> <a
+href='http://www.remy-solnais.com/tag/poo/' class='tag-link-49' title='5 sujets' style='font-size: 15.6363636364pt;'>POO</a> <a
+href='http://www.remy-solnais.com/tag/programmation/' class='tag-link-21' title='11 sujets' style='font-size: 20.4090909091pt;'>programmation</a> <a
+href='http://www.remy-solnais.com/tag/projet/' class='tag-link-30' title='1 sujet' style='font-size: 8pt;'>projet</a> <a
+href='http://www.remy-solnais.com/tag/projet-10100/' class='tag-link-32' title='1 sujet' style='font-size: 8pt;'>projet 10^100</a> <a
+href='http://www.remy-solnais.com/tag/telecharger/' class='tag-link-19' title='4 sujets' style='font-size: 14.3636363636pt;'>télécharger</a> <a
+href='http://www.remy-solnais.com/tag/telecharger-google-chrome/' class='tag-link-20' title='1 sujet' style='font-size: 8pt;'>télécharger google chrome</a> <a
+href='http://www.remy-solnais.com/tag/tablesorter/' class='tag-link-36' title='1 sujet' style='font-size: 8pt;'>tablesorter</a> <a
+href='http://www.remy-solnais.com/tag/tablesorterpicker/' class='tag-link-38' title='1 sujet' style='font-size: 8pt;'>tablesorterpicker</a> <a
+href='http://www.remy-solnais.com/tag/ubuntu/' class='tag-link-59' title='3 sujets' style='font-size: 12.7727272727pt;'>Ubuntu</a> <a
+href='http://www.remy-solnais.com/tag/vista/' class='tag-link-25' title='1 sujet' style='font-size: 8pt;'>vista</a> <a
+href='http://www.remy-solnais.com/tag/windows/' class='tag-link-24' title='2 sujets' style='font-size: 10.8636363636pt;'>Windows</a> <a
+href='http://www.remy-solnais.com/tag/windows-live/' class='tag-link-10' title='1 sujet' style='font-size: 8pt;'>windows live</a> <a
+href='http://www.remy-solnais.com/tag/windows-live-messenger/' class='tag-link-14' title='1 sujet' style='font-size: 8pt;'>windows live messenger</a> <a
+href='http://www.remy-solnais.com/tag/windows-vista/' class='tag-link-26' title='1 sujet' style='font-size: 8pt;'>windows vista</a></div></div></div><div
+id="posts"><div
+class="post"><div
+class="titull"> <a
+href="http://www.remy-solnais.com/jquery-et-datepicker/" rel="bookmark">jQuery et datePicker</a></div><div
+class="meta">Publi&eacute; par <a
+href="http://www.remy-solnais.com/author/artnets/" title="Articles par Rémy SOLNAIS">Rémy SOLNAIS</a> le 21 février 2009, <a
+href="http://www.remy-solnais.com/jquery-et-datepicker/#comments">37 commentaires</a></div><div
+class="category">Cat&eacute;gorie : <a
+href="http://www.remy-solnais.com/categorie/developpement/" title="Voir tous les articles dans Développement" rel="category tag">Développement</a>,<a
+href="http://www.remy-solnais.com/categorie/javascript/" title="Voir tous les articles dans JavaScript" rel="category tag">JavaScript</a></div><p>Comme promis, voilà la suite sur jQuery et ses plugins.<br
+/> Dans ce billet, nous allons abordé le fameux plugin &laquo;&nbsp;datePicker&nbsp;&raquo;, plugin permettant de gérer facilement un calendrier JavaScript.</p><p>Pour cela, il vous faut :</p><p>- le moteur de script jQuery : <a
+title="jQuery 1.3.2 min" href="http://www.remy-solnais.com/wp-content/uploads/2011/02/jquery-132min.js">jQuery 1.3.2 min</a><br
+/> - le plugin datePicker : <a
+title="datePicker" href="http://www.remy-solnais.com/wp-content/uploads/2011/02/uidatepicker.js">datePicker</a><br
+/> - le patch français : <a
+title="datePicker-fr" href="http://www.remy-solnais.com/wp-content/uploads/2011/02/uidatepicker-fr.js">datePicker-fr</a><br
+/> - le style css : <a
+title="css-datePicker" href="http://www.remy-solnais.com/wp-content/uploads/2011/02/uidatepicker.css">css-datePicker</a></p><p> Cette version de datePicker est modifié afin de faciliter son utilisation. <strong>Les paramètres du datePicker sont &laquo;&nbsp;francisé&nbsp;&raquo;.</strong></p><p>La première des choses à faire, c&#8217;est de place les include HTML JavaScript dans la balise head, ou mieux, en bas de page (afin d&#8217;optimiser le chargement de la page).</p><p><code>&lt;script type="text/javascript" src="ui.datepicker.js" mce_src="ui.datepicker.js"&gt;&lt;/script&gt;<br
+/> &lt;script type="text/javascript" src="ui.datepicker-fr.js" mce_src="ui.datepicker-fr.js"&gt;&lt;/script&gt;<br
+/> </code></p><p>Le css, quant à lui, doit être inclu dans le header HTML :<br
+/> <code><br
+/> &lt;link type="text/css" rel="stylesheet" href="ui.datePicker.css" mce_href="ui.datePicker.css" /&gt;<br
+/> </code></p><p>Pour ce qui est du code HTML à mettre en place :</p><p><code>&lt;input type="text" name="maDate" id="maDate" class="date_input" value="" /&gt;</code></p><p>Le code JavaScript permettant l&#8217;initialisation du calendrier datePicker :</p><p><code><br
+/> jQuery(document).ready(function() {<br
+/>     jQuery.datepicker.setDefaults(jQuery.datepicker.regional['fr']);<br
+/>     jQuery("#maDate").mousedown(function(){<br
+/>         jQuery("#maDate").datepicker('change', {dateFormat: 'dd-mm-yy', firstDay:1 }).attr("readonly","readonly");<br
+/>     });<br
+/> });</code></p><p>Cette ligne permet d&#8217;attendre la fin du chargement de la page pour lancer le code JavaScript suivant :</p><p><code><br
+/> jQuery(document).ready(function() {});<br
+/> </code></p><p>Cette ligne permet de spécifier le fichier de langue utilisé :</p><p><code><br
+/> jQuery.datepicker.setDefaults(jQuery.datepicker.regional['fr']);<br
+/> </code></p><p>Cette ligne permet de définir les paramètres du calendrier lorsqu&#8217;il y aura un clic dans le champ de saisie :</p><p><code><br
+/>     jQuery("#maDate").mousedown(function(){<br
+/>         jQuery("#maDate").datepicker('change', {dateFormat: 'dd-mm-yy', firstDay:1 }).attr("readonly","readonly");<br
+/>     });<br
+/> </code></p><p>Ici, dans notre cas, le champ de saisie&nbsp;&raquo;maDate&nbsp;&raquo; devient seulement lisible, et ne peut être modifié manuellement.<br
+/> La date affiché est au format français, mais peut être modifié dans le paramètrage du datePicker.</p><p>Si vous souhaitez ajouter des bornes au datePicker, il suffit, dans les paramètres, d&#8217;ajouter ces codes (nombre en jours par rapport à today) :</p><p><code>minDate:'-36500', maxDate:'+36500'</code></p><p>En PHP, lorsque vous récupérer la date français, il vous faut la reconvertir en date US (pour MySQL par exemple), vous pouvez utiliser cette petite fonction :</p><p><code>static function dateFr($sDate, $sType=''){<br
+/>  @date_default_timezone_set('Europe/Paris');<br
+/>  switch($sType){<br
+/>   case "fr2my" : // renvoi une date simple en anglais<br
+/>   $sDateReturn = ereg_replace('^([0-9]{1,2})-([0-9]{1,2})-([0-9]{2,4})$', '\\3-\\2-\\1', $sDate);<br
+/>   break;</code><code>case "my2fr": // renvoi une date simple en français<br
+/>   if(!empty($sDate)&amp;&amp;$sDate!="0000-00-00")<br
+/>   $sDateReturn = substr($sDate,8,2).'-'.substr($sDate,5,2).'-'.substr($sDate,0,4);<br
+/>   else<br
+/>   $sDateReturn = '';<br
+/>   break;</code><code>case "my2frTxt" : // renvoi une date simple texte en français<br
+/>   if(!empty($sDate)&amp;&amp;$sDate!='0000-00-00'){<br
+/>   setlocale(LC_TIME, "fr_FR@euro","fr_FR","fr","FR");<br
+/>   $sDateReturn=strftime("%d %B %Y",strtotime($sDate));<br
+/>   }<br
+/>   else<br
+/>   $sDateReturn = '';<br
+/>   break;</code></p><p>case &laquo;&nbsp;my2frTxtShort&nbsp;&raquo; : // renvoi une date simple texte en français<br
+/>   if(!empty($sDate)&amp;&amp;$sDate!=&#8217;0000-00-00&#8242;){<br
+/>   setlocale(LC_TIME, &laquo;&nbsp;fr_FR@euro&nbsp;&raquo;,&nbsp;&raquo;fr_FR&nbsp;&raquo;,&nbsp;&raquo;fr&nbsp;&raquo;,&nbsp;&raquo;FR&nbsp;&raquo;);<br
+/>   $sDateReturn=strftime(&laquo;&nbsp;%d %b %Y&nbsp;&raquo;,strtotime($sDate));<br
+/>   }<br
+/>   else<br
+/>   $sDateReturn = &nbsp;&raquo;;<br
+/>   break;</p><p>case &laquo;&nbsp;my2frTxtTime&nbsp;&raquo; : // renvoi une date et l&#8217;heure texte en français (avec le &laquo;&nbsp;à&nbsp;&raquo;)<br
+/>   if(!empty($sDate)){<br
+/>   setlocale(LC_TIME, &laquo;&nbsp;fr_FR@euro&nbsp;&raquo;,&nbsp;&raquo;fr_FR&nbsp;&raquo;,&nbsp;&raquo;fr&nbsp;&raquo;,&nbsp;&raquo;FR&nbsp;&raquo;);<br
+/>   $sDateReturn=strftime(&laquo;&nbsp;%d %B %Y à %H:%M&nbsp;&raquo;,strtotime($sDate));<br
+/>   }<br
+/>   else<br
+/>   $sDateReturn = $sDate;<br
+/>   break;</p><p>case &laquo;&nbsp;my2frTxtFull&nbsp;&raquo; : // renvoi une date et l&#8217;heure basique en français (sans le &laquo;&nbsp;à&nbsp;&raquo;)<br
+/>   if(!empty($sDate)){<br
+/>   setLocale(LC_TIME, &laquo;&nbsp;fr_FR@euro&nbsp;&raquo;,&nbsp;&raquo;fr_FR&nbsp;&raquo;,&nbsp;&raquo;fr&nbsp;&raquo;,&nbsp;&raquo;FR&nbsp;&raquo;);<br
+/>   $sDateReturn = strftime(&laquo;&nbsp;%d %B %Y %H:%M:%S&nbsp;&raquo;,strtotime($sDate));<br
+/>   }<br
+/>   else<br
+/>   $sDateReturn = $sDate;<br
+/>   break;</p><p>case &laquo;&nbsp;frTxt&nbsp;&raquo; : // renvoi la date/time actuelle dont les critères sont spécifiés dans $sDate<br
+/>   setLocale(LC_TIME, &laquo;&nbsp;fr_FR@euro&nbsp;&raquo;,&nbsp;&raquo;fr_FR&nbsp;&raquo;,&nbsp;&raquo;fr&nbsp;&raquo;,&nbsp;&raquo;FR&nbsp;&raquo;);<br
+/>   $sDateReturn = strftime($sDate,time());<br
+/>   break;</p><p>case &laquo;&nbsp;my2Picker&nbsp;&raquo; : // renvoi une date formaté pour le datePicker new Date(2005, 1 &#8211; 1, 26)<br
+/>   list($yTmp,$mTmp,$dTmp)=explode(&laquo;&nbsp;-&nbsp;&raquo;,$sDate);<br
+/>   $dateTmp=mktime(0,0,0,$mTmp,($dTmp+1),$yTmp);<br
+/>   $sDateReturn=&nbsp;&raquo;new Date(&laquo;&nbsp;.date(&#8216;Y&#8217;,$dateTmp).&nbsp;&raquo;, &laquo;&nbsp;.(date(&#8216;n&#8217;,$dateTmp)-1).&nbsp;&raquo;, &laquo;&nbsp;.date(&#8216;d&#8217;,$dateTmp).&nbsp;&raquo;)&nbsp;&raquo;;<br
+/>   break;</p><p>default: // n&#8217;effectué aucune opération sur la date<br
+/>   if($sDate==&#8217;0000-00-00&#8242;){<br
+/>   $sDateReturn = &nbsp;&raquo;;<br
+/>   }<br
+/>   else{<br
+/>   $sDateReturn = $sDate;<br
+/>   }<br
+/>   break;<br
+/>   }// end swicth<br
+/>   return $sDateReturn;<br
+/>  }//end function dateFr</p><p>Il vous suffira d&#8217;appeler comme ceci :</p><p><code>dateFr($_REQUEST['maDate'], 'fr2my');</code></p><p>En espérant avoir apporté un peu d&#8217;aide &#8230;. vous pouvez toujours laisser vos commentaires, réflexion, et correction !</p><p><a
+href="javascript:openPopup();">Voir la démo</a></p><p><script type="text/javascript">function openPopup(){var tot = window.open('http://www.remy-solnais.com/data/demo_datepicker/demo_datePicker.html','tot','menubar=no,width=300px,height=300px');}</script></p><p
+class="tags"><strong>Tags:</strong> <a
+href="http://www.remy-solnais.com/tag/calendrier/" rel="tag">calendrier</a>, <a
+href="http://www.remy-solnais.com/tag/calendrier-dynamique/" rel="tag">calendrier dynamique</a>, <a
+href="http://www.remy-solnais.com/tag/calendrier-javascript/" rel="tag">calendrier JavaScript</a>, <a
+href="http://www.remy-solnais.com/tag/datepicker/" rel="tag">datepicker</a>, <a
+href="http://www.remy-solnais.com/tag/datepicker-francais/" rel="tag">datePicker français</a>, <a
+href="http://www.remy-solnais.com/tag/datepicker-french/" rel="tag">datePicker french</a>, <a
+href="http://www.remy-solnais.com/tag/jquery/" rel="tag">JQUERY</a></p></div><div
+class="comments"><div
+id="comments"><h2 id="number">37 commentaires</h2><ul
+class="comments"><li
+id="comment-21" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.lexik.fr/sfblog/symfony/symfony-jquery-datepicker-491' rel='external nofollow' class='url'>Symfony &amp; jQuery DatePicker &laquo; Blog Symfony - Lexik Montpellier</a></strong> le 14 avril 2009 &agrave; 8:31</div><div
+class="alignright avatar"></div><p>[...] Datepicker jQuery en français [...]</p></li><li
+id="comment-38" class="comment"><div
+class="meta">Par <strong>Meche</strong> le 20 mai 2009 &agrave; 18:01</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/4ad3fa862beb1efbe8b26659e64cc197?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Déjà merci pour ce tuto <img
+src='http://www.remy-solnais.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /></p><p>Apres, je n&#8217;arrive pas a comprendre la partie concernant la conversion de date.</p><p>Cette fonction sert a afficher en format FR dans le champs de saisi apres avoir selectionné la date, ou bien, elle permet de modifier le format de la date pour l&#8217;insertion SQL ? car si c&#8217;est le cas, pourquoi cette date ne fait que de de traitenement vers une date FR et non vers une date AN ?</p><p>Apres, j&#8217;aimerais un exemple concret quand a sont exploitation. Dans mon cas, ca serais de pouvoir injecter la date, dans ma base sql, pour garder le bon type de champs</p><p>Merci</p></li><li
+id="comment-39" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 20 mai 2009 &agrave; 20:08</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Cette méthode possède deux case :</p><p>- le my2fr qui permet simplement de convertir un format MYSQL vers un format FR<br
+/> - le fr2my qui permet de convertir une date au format français (saisie dans datepicker par exemple) en format MYSQL (insertion MYSQL).</p><p>Cette méthode est juste là pour convertir et peut être appelé soit pour l&#8217;affichage, soit pour l&#8217;insertion.</p><p>Lorsque tu veux afficher une date au format FR, tu fait un appel du genre :</p><p>echo datefr(&#8217;2009-02-05&#8242;,&#8217;my2fr&#8217;);</p><p>et lors de ton insertion :</p><p>mysql_query( &#8216;INSERT INTO t_table VALUES( &laquo;&nbsp;&nbsp;&raquo;, &laquo;&nbsp;&#8216;.dateFr(&#8217;02-05-2009&#8242;, &#8216;fr2my&#8217;).&#8217;&nbsp;&raquo; )&#8217; );</p><p>Maintenant, je te conseil de développer en objet (cf. mes billets sur la POO) et de développer une classe static de format ( format::dateFr() ).</p><p>Voilà, et encore merci de suivre mes conseils.</p></li><li
+id="comment-40" class="comment"><div
+class="meta">Par <strong>Meche</strong> le 20 mai 2009 &agrave; 21:52</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/4ad3fa862beb1efbe8b26659e64cc197?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Certe, la Programation orienté object a l&#8217;air bien puissant, mais pour le moment je me bats entre les fonctions PHP, le java et son pote l&#8217;ajax, deja beaucoup de nouvelles choses pour moi ^^</p><p>Merci d&#8217;avoir pris le temps de m&#8217;expliqué votre fonction plus en detail, que je cerne d&#8217;avantage.</p><p>J&#8217;ai créé un fichier date.php ou j&#8217;ai placer votre fonction, puis j&#8217;ai fait un include dans mon fichier sql, seulement j&#8217;ai l&#8217;erreur suivante:</p><p>Parse error: syntax error, unexpected T_FUNCTION, expecting T_VARIABLE in W:\var\www\fel\script\date.php on line 2</p><p>je precise que ce fichier n&#8217;a aucun include de Jquery ou des script JS donné si dessus.</p><p>Si je me plante completement et que ta fonction et en faite une fonction JS, pour ma defence, j&#8217;ai essayer sans succès ^^</p></li><li
+id="comment-41" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 21 mai 2009 &agrave; 6:24</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Pourrais tu mettre une parti de ton code qui a des problèmes et l&#8217;include pour voir ?</p><p>Aussi, tu dis te &laquo;&nbsp;battre&nbsp;&raquo; avec les fonctions PHP, le Java et l&#8217;ajax.</p><p>Juste pour information : PHP avec les &laquo;&nbsp;fonctions&nbsp;&raquo; est maintenant dépassé (PHP 4 n&#8217;est plus supporté), mais par contre PHP 5 (POO) est d&#8217;actualité.<br
+/> Je te conseil de te mettre directement à PHP objet afin d&#8217;aquérir directement les bonnes pratiques sans devoir passer par une étape liée à une technologie ancienne (PHP4).</p><p>Aussi, tu dis te battre avec &laquo;&nbsp;java&nbsp;&raquo;, c&#8217;est du java pur ou du javascript ?? (grossse différence, java est un language compilé executable sous forme de logiciel sur le client => windows/linux/mac ou sous forme d&#8217;applet dans les pages Internet, il nécessite le plugin SUN; alors que Javascript est un langage executé par le navigateur client dans le HTML permettant d&#8217;effectuer des actions et des traitements sur l&#8217;arbre DOM HTML. L&#8217;arbre DOM HTML est la structure parent/enfant de ton code HTML affiché (html->head/body->div->p etc&#8230;; quant à AJAX, qui veux dire Asynchrone Javascript And Xml, très peu de gens l&#8217;utilise : beaucoup utilise le protocole XML_HTTPREQUEST qui est natif Javascript est qui permet de lancer des requêtes externe via Javascript, mais très peu parse de XML en retour : trop compliqué et inutile face aux connexions interne haut débit).</p><p>Si tu cherche un peu plus d&#8217;info sur ces nouvelles technologies, je suis ton homme, suffit de demander ..</p><p>En espérant avoir répondu à tes question &#8230;.</p><p>PS : la fonction que je t&#8217;ai donné est bien une fonction PHP, qui doit être &laquo;&nbsp;appelé/instancié&nbsp;&raquo; à la création de ta requête SQL.</p></li><li
+id="comment-42" class="comment"><div
+class="meta">Par <strong>Meche</strong> le 26 mai 2009 &agrave; 22:50</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/4ad3fa862beb1efbe8b26659e64cc197?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Pour le code qui me pause problème j&#8217;y revendrai plus tard, car je ne suis plus dans le &laquo;&nbsp;truc&nbsp;&raquo;.</p><p>Je n&#8217;etais pas au courant que le mouvement été maintenant a la POO, mais un ami ma dis: C&#8217;est bien beau, mais si tu en as pas besoin, reste sur les fonctions.</p><p>et-il forcement necessaire de faire appel a de la POO ?</p><p>Concernant mes galères de programmation, c&#8217;etais plutot une réalité general, quelque soit le language. Apres, oui je parlais bien de Javascript, l&#8217;ajax me sert pour l&#8217;instant uniquement via des object Xmlhttprequest pour mes formulaires &laquo;&nbsp;dynamique&nbsp;&raquo;, liste lié, vérification de doublon etc.</p><p>Je suis toujours a l&#8217;affut de nouvelle info, mais parfois il est difficile de comprendre quelle technique utiliser pour une problèmatique. Alors il faut faire le tri, et la ca deviens comlpliqué ^^. En tous cas je te remerci de cette proposition !!</p><p>Pour revenir au sujet, c&#8217;est donc une fonction PHP ! Je peu donc la mettre dans un fichier unique, que j&#8217;appelle via un Requiere_once(tada.php)</p><p>Par contre, étant donnée que la fonction attend les valeur de $sDate, $sType=&nbsp;&raquo;, il faut faire comment pour les passé au moment de la validation du formulaire, donc venant de $_POST a $sdate ?</p></li><li
+id="comment-47" class="comment"><div
+class="meta">Par <strong>sam</strong> le 31 juillet 2009 &agrave; 18:13</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/0149d5dd275eab3c470be36d71903939?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>salut</p><p>j&#8217;aurai une question à te poser sur ton code.</p><p>j&#8217;ai recupéré sur mon serveur les different fichiers js necessaire pour le faire fonctionner + la css.</p><p>c tès bizarre, il fonctionne parfaitement quand la fenetre explorer est très petite ( comme dans ton exemple ouvert en popup) par contre si tu l&#8217;execute sur une page ouverte en grand et que tu tentes de cliquer sur la zone de input ca marche la première fois, on voit le calendrier puis apres ca ne marche plus, en s&#8217;acharnant a cliquer un peu partout sur l&#8217;input on arrive en arrive qlq fois a faire réapparaitre le calendrier mais c très dur</p><p>tu saurai quel est le problème ?</p></li><li
+id="comment-51" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 1 août 2009 &agrave; 15:08</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Salut Sam,</p><p>il semblerai, juste avec ce que tu me dis, que &laquo;&nbsp;l&#8217;écouteur&nbsp;&raquo; soit appliqué au movais objet.</p><p>Je t&#8217;invite à poster ton code html.</p><p>Cordialement.</p></li><li
+id="comment-56" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 26 août 2009 &agrave; 22:23</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>Depuis un certain je cherche ce calendrier qui est super.<br
+/> Je voudrais l&#8217;inclure dans mon form mais malheureusement rien ne passe.<br
+/> J&#8217;ai certainement fait une bourde mais je ne vois pas laquelle?<br
+/> Pouvez vous me guider s&#8217;il vous plait?<br
+/> J&#8217;ai inséré les 3 fichiers JS dans un dossier &laquo;&nbsp;lib&nbsp;&raquo;<br
+/> et le fichier CSS dans un dossier &laquo;&nbsp;design&nbsp;&raquo;<br
+/> et l&#8217;input dans mon form.<br
+/> Voilà mes 4 fichiers si vous pouvez me dire ce que vous en pensez ? Merci beaucoup</p></li><li
+id="comment-57" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 26 août 2009 &agrave; 22:24</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div></li><li
+id="comment-58" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 31 août 2009 &agrave; 10:27</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,<br
+/> Aidez-moi s&#8217;il vous plait ?</p><p>Le code JavaScript permettant l’initialisation du calendrier datePicker ne fonctionne pas.</p><p>Merci vraiment de votre aide</p></li><li
+id="comment-59" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 31 août 2009 &agrave; 19:43</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonsoir.</p><p>J&#8217;ai bien vu vos commentaire.</p><p>Pour vous aider, il faudrait que vous mettiez le contenu de vos fichiers (tout votre code), soit que vous me donniez un lien pour voir &laquo;&nbsp;la chose&nbsp;&raquo; afin que je puisse regarder d&#8217;où vient le problème.</p><p>Dans tous les cas, je pourrais sans aucun problème vous aider, mais il me faut juste un peu plus d&#8217;informations ..</p><p>Cordialement, Rémy.</p></li><li
+id="comment-60" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 4 septembre 2009 &agrave; 7:55</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour et merci de pouvoir m&#8217;aider.</p><p>Je vous donne le code que j&#8217;ai mis dans ma page &laquo;&nbsp;membre.php&nbsp;&raquo; qui initialise le calendrier.<br
+/> entre les balises HEAD</p><p>jQuery(document).ready(function() {<br
+/> jQuery.datepicker.setDefaults(jQuery.datepicker.regional['fr']);<br
+/> jQuery(&laquo;&nbsp;#maDate&nbsp;&raquo;).mousedown(function(){<br
+/> jQuery(&laquo;&nbsp;#maDate&nbsp;&raquo;).datepicker(&#8216;change&#8217;, {dateFormat: &#8216;dd-mm-yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);<br
+/> });<br
+/> });</p><p>ensuite ma ligne de formulaire html</p><p>Date de Naissance :<br
+/> &lt;input type=&quot;text&quot; name=&quot;maDate&quot; id=&quot;maDate&quot; class=&quot;date_input&quot; size=&quot;25&quot; value=&quot;naissance ?&gt;&nbsp;&raquo; /&gt;</p><p>et après j&#8217;ai mis les 4 pages qui donne dans l&#8217;exemple.</p><p>- le moteur de script jQuery : jQuery 1.3.2 min<br
+/> - le plugin datePicker : datePicker<br
+/> - le patch français : datePicker-fr<br
+/> - le style css : css-datePicker</p><p>Et dans ma page header</p><p>Merci beaucoup</p></li><li
+id="comment-61" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 6 septembre 2009 &agrave; 8:39</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>Je suis toujours dans mes recherches, pouvez-vous m&#8217;aider ?</p><p>Un grand merci</p></li><li
+id="comment-62" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 7 septembre 2009 &agrave; 8:11</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>Désolé, mais entre le travail et un week end assez chargé, très peu de temps pour l&#8217;internet.</p><p>Je pense qu&#8217;il faut regarder du coté des includes.</p><p>Sous Firefox, il existe un plugin nommé Firebug qui permet de visualiser les erreurs Javascript générées par la page en cours, je vous conseil fortement de l&#8217;installer afin de vérifier qu&#8217;aucune erreur JS n&#8217;est générée.</p><p>Pour ce qui est code JS et HTML de votr formulaire, je le trouve plutôt bon, mais je rajouterai :</p><p>jQuery(document).ready(function() {<br
+/> jQuery.datepicker.setDefaults(jQuery.datepicker.regional['fr']);</p><p>jQuery( &laquo;&nbsp;#maDate&nbsp;&raquo; ).datepicker({dateFormat: &#8216;dd-mm-yy&#8217;, firstDay:1 }).attr( &laquo;&nbsp;readonly&nbsp;&raquo;, &laquo;&nbsp;readonly&nbsp;&raquo; );</p><p>jQuery( &laquo;&nbsp;#maDate&nbsp;&raquo; ).mousedown(function(){<br
+/> jQuery( &laquo;&nbsp;#maDate&nbsp;&raquo; ).datepicker(&#8216;change&#8217;, {dateFormat: &#8216;dd-mm-yy&#8217;, firstDay:1 }).attr( &laquo;&nbsp;readonly&nbsp;&raquo; , &laquo;&nbsp;readonly&nbsp;&raquo; );<br
+/> });<br
+/> });</p><p>Le ligne avant le mousedown va permettre &laquo;&nbsp;d&#8217;initialiser&nbsp;&raquo; le champs en datepicker de façon à le &laquo;&nbsp;griser&nbsp;&raquo; par défaut.</p><p>Le champ est il grisé lorsque vous cliquez dans le champ ?<br
+/> Si non, c&#8217;est que JQUERY ne s&#8217;applique par correctement (voir Firebug).</p><p>Dans l&#8217;attente de votre retour.</p></li><li
+id="comment-63" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 26 septembre 2009 &agrave; 22:25</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>J&#8217;ai tellement chercher à faire fonctionner le calendrier que je perds mon &laquo;&nbsp;latin&nbsp;&raquo;<br
+/> Pouvez-vous m&#8217;aider s&#8217;il vous plait ?<br
+/> Merci beaucoup</p><p> $(document).ready(function() {<br
+/> $.datepicker.setDefaults($.datepicker.regional['fr']);<br
+/> $(&#8216;#monImage1&#8242;).click(function(){<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker(&#8216;show&#8217;);<br
+/> });<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker({minDate:&#8217;-36500&#8242;, maxDate:&#8217;+36500&#8242;, dateFormat: &#8216;dd MM yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);</p><p> $(&#8216;#monImage1&#8242;).mousedown(function(){<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker({minDate:&#8217;-36500&#8242;, maxDate:&#8217;+36500&#8242;, dateFormat: &#8216;dd MM yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);<br
+/> });</p><p> });</p><p>&lt;input id=&quot;naissance&quot; class=&quot;date_input&quot; name=&quot;user_naissance&quot; size=&quot;25&quot; value=&quot;naissance ?&gt;&nbsp;&raquo; type=&nbsp;&raquo;text&nbsp;&raquo; disabled=&nbsp;&raquo;"/&gt;</p></li><li
+id="comment-64" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>artnets</a></strong> le 27 septembre 2009 &agrave; 7:56</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour.</p><p>Je viens de regarder votre code. Vous vous compliquez un peu :</p><p>Lorsque vous faites une initialisation du datepicker, une seule ligne suffit :</p><p>$(&laquo;&nbsp;.date-pick&nbsp;&raquo;).datepicker();</p><p>Les click et mousedown sont utiles seulement si vous souhaitez faire des phases de vérifications ou si vous avez des contraintes sur d&#8217;autres champs (dépendance de limite entre un champ de début et un champ de fin).</p><p>Regardez ce petit rar :</p><p><a
+href="http://www.remy-solnais.com/data/datepicker_image.rar" rel="nofollow">datepicker_image.rar</a></p><p>Il y a dedans tous ce qu&#8217;il faut pour que le &laquo;&nbsp;click&nbsp;&raquo; se fasse sur une image est non sur le champ.</p><p>$(function()<br
+/> {<br
+/> $(&laquo;&nbsp;.date-pick&nbsp;&raquo;).datepicker({ minDate:&#8217;-36500&#8242;, maxDate:&#8217;+36500&#8242;, dateFormat: &#8216;dd MM yy&#8217;, firstDay:1 ,<br
+/> showOn: &#8216;button&#8217;, buttonImageOnly: true, buttonImage: &#8216;calendar.png&#8217; }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);<br
+/> });</p><p>Voilà, si vous avez besoin, vous pouvez toujours revenir vers moi.</p></li><li
+id="comment-65" class="comment"><div
+class="meta">Par <strong>Marygil</strong> le 27 septembre 2009 &agrave; 17:56</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/dd42cff21eb0af5a0faa512a2b3a9cec?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour et merci beaucoup.</p><p>Au niveau de l&#8217;input pouvez-vous me dire ce que vous en pensez.<br
+/> Ca ne fonctionne toujours pas.<br
+/> Merci vraiment de votre aide.</p><p>Date de Naissance :<br
+/> &lt;input id=&quot;naissance&quot; class=&quot;date_input&quot; name=&quot;user_naissance&quot; size=&quot;25&quot; value=&quot;naissance ?&gt;&nbsp;&raquo; type=&nbsp;&raquo;text&nbsp;&raquo; disabled=&nbsp;&raquo;"/&gt;</p></li><li
+id="comment-71" class="comment"><div
+class="meta">Par <strong>neveralone</strong> le 1 décembre 2009 &agrave; 15:59</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/f75af4c1670220377b0599c682ac3ded?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Salut et merci pour ton article très intéressant!</p><p>J&#8217;ai remarqué que les cases du week end de ton calendrier sont grisées. Comment fais tu pour différencier ces jours par rapport aux autres de la semaine. Pour ma pars j&#8217;aimerai qu&#8217;ils deviennent impossible a sélectionner!</p><p>Peux tu me guider stp</p><p>Je te remercie!</p><p>Bonne journée</p></li><li
+id="comment-73" class="comment"><div
+class="meta">Par <strong>pady</strong> le 10 février 2010 &agrave; 23:56</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/891fea14cab776f0bf239feead04c79c?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>bonjour,<br
+/> j&#8217;ai un problème je manipule 2 dates picker(date debut et date fin)<br
+/> je voudrais avoir le nombre de jours entre ces deux dates pourriez vous m&#8217;aider svp?</p></li><li
+id="comment-74" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>Rémy SOLNAIS</a></strong> le 11 février 2010 &agrave; 16:51</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour Pady,</p><p>La réponse est assez simple :</p><p>// datepicker(&laquo;&nbsp;getDate&nbsp;&raquo;) => récupère un objet de type new Date() à partir de l&#8217;objet datepicker<br
+/> var dateDebut = $(&laquo;&nbsp;#idDateDebut&nbsp;&raquo;).datepicker(&laquo;&nbsp;getDate&nbsp;&raquo;);<br
+/> var dateFin = $(&laquo;&nbsp;#idDateFin&nbsp;&raquo;).datepicker(&laquo;&nbsp;getDate&nbsp;&raquo;);</p><p>// calcule de la différence<br
+/> var dif = dateFin.getTime()-dateDebut.getTime();<br
+/> // la fonction getTime sur mes objets date me permet de récupérer le nombre milliseconde de ma date depuis le 1 janvier 1970 [http://actuel.fr.selfhtml.org/archives/docu/7.0/tece.htm#a8]</p><p>dif = dif/1000/(60*60*24); // on divise par 1000 pour passer  en seconde, puis par (60*60*24) pour passer en jour !!<br
+/> alert( dif );</p><p>Et tu possède alors ton nombre de jour.</p><p>Attention, il te faudra vérifier que tes champs DatePicker ai bien été initialiser, et qu&#8217;il ne sont pas vide.</p><p>En espérant t&#8217;avoir un peu aidé &#8230;</p></li><li
+id="comment-75" class="comment"><div
+class="meta">Par <strong>CHIABERTO</strong> le 18 mars 2010 &agrave; 23:51</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>Une petite question si cela vous est déjà arrivé.<br
+/> En local le calendrier marche nickel mais pas sur mon serveur distant ?<br
+/> Pouvez-vous m&#8217;aider s&#8217;il vous plait<br
+/> Merci beaucoup</p></li><li
+id="comment-76" class="comment"><div
+class="meta">Par <strong>CHIABERTO</strong> le 18 mars 2010 &agrave; 23:58</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>je vous donne mes codes<br
+/> [code]</p><p> $(document).ready(function() {<br
+/> $.datepicker.setDefaults($.datepicker.regional['fr']);<br
+/> $('#monImage1').click(function(){<br
+/> $("#naissance").datepicker('show');<br
+/> });<br
+/> $("#naissance").datepicker({minDate:'-36500', maxDate:'+36500', dateFormat: 'dd MM yy', firstDay:1 }).attr("readonly","readonly");</p><p> $('#monImage1').mousedown(function(){<br
+/> $("#naissance").datepicker({minDate:'-36500', maxDate:'+36500', dateFormat: 'dd MM yy', firstDay:1 }).attr("readonly","readonly");<br
+/> });</p><p> });</p><p>[/code]</p><p>et mes 4 includes</p></li><li
+id="comment-77" class="comment"><div
+class="meta">Par <strong>CHIABERTO</strong> le 19 mars 2010 &agrave; 0:00</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>et mes 4 includes</p></li><li
+id="comment-78" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>Rémy SOLNAIS</a></strong> le 19 mars 2010 &agrave; 16:54</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Auriez vous une adresse pour votre serveur distant ?</p><p>Je pense pour un problème de javascript (bloqué sur Internet), mais je pourrai voir le problème que sur l&#8217;url de votre adresse distante.</p><p>Cdt, Rémy SOLNAIS.</p></li><li
+id="comment-79" class="comment"><div
+class="meta">Par <strong>raikonen</strong> le 28 mars 2010 &agrave; 13:11</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/5f23c8620d47e0ae8e2af8e6b0618dc5?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Merci Merci Merci pour ce tuto Rémy <img
+src='http://www.remy-solnais.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br
+/> C&#8217;est rés pro!!<br
+/> @+</p></li><li
+id="comment-80" class="comment"><div
+class="meta">Par <strong>CHIABERTO</strong> le 21 avril 2010 &agrave; 20:47</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour</p><p>Merci pour votre réponse, désolé de ce retard pour vous remercier.<br
+/> Votre calendrier est vraiment super maintenant il fonctionne à merveille.<br
+/> Aujourd&#8217;hui je suis à la recherche d&#8217;un calendrier du même style mais qui affiche uniquement les heures et les minutes dans un input.<br
+/> Alors je me permet de vous demander si par hazard vous avez des infos la-dessus?<br
+/> Je vous remercie beaucoup</p></li><li
+id="comment-81" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>Rémy SOLNAIS</a></strong> le 23 avril 2010 &agrave; 16:19</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Je vous envoi vers :</p><p><a
+href="http://www.lafermeduweb.net/billet/un-time-picker-pour-le-datepicker-de-jquery-520.html" rel="nofollow">http://www.lafermeduweb.net/billet/un-time-picker-pour-le-datepicker-de-jquery-520.html</a></p><p><a
+href="http://haineault.com/media/jquery/ui-timepickr/page/#d-demo-wrapper-2" rel="nofollow">http://haineault.com/media/jquery/ui-timepickr/page/#d-demo-wrapper-2</a></p><p><a
+href="http://www.google.fr/#hl=fr&#038;source=hp&#038;q=timepicker+jquery&#038;aq=0&#038;aqi=g9g-s1&#038;aql=&#038;oq=timepi&#038;gs_rfai=&#038;fp=5d7829ea17882594" rel="nofollow">http://www.google.fr/#hl=fr&#038;source=hp&#038;q=timepicker+jquery&#038;aq=0&#038;aqi=g9g-s1&#038;aql=&#038;oq=timepi&#038;gs_rfai=&#038;fp=5d7829ea17882594</a></p><p>Et hop, à vous de jouer <img
+src='http://www.remy-solnais.com/wp-includes/images/smilies/icon_biggrin.gif' alt=':-D' class='wp-smiley' /></p></li><li
+id="comment-82" class="comment"><div
+class="meta">Par <strong>PL</strong> le 28 avril 2010 &agrave; 6:51</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/fb91222e3591faf3a0b2b73a877e907d?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Salut, j&#8217;aimerai savoir comment modifier le code javascript pour changer la date par défaut présélectionnée qui est actuellement la date du jour. Je m&#8217;explique, j&#8217;ai un paramètre d&#8217;année et de mois dans ma page web, et je voudrais, en fonction du mois et de l&#8217;année sélectionné par l&#8217;utilisateur, que le calendrier ce positionne au début de ce mois et de cette année sélectionné pour pas que l&#8217;utilisateur est à choisir à chaque fois le bon mois. Mais le problème c&#8217;est que le javascript je ne le connais pas assez et j&#8217;ai cherché et je ne n&#8217;ai pas trouvé. Je sais que cela peut paraître un peu bizarre mais le but de ma page web est de permettre aux utilisateurs de choisir les dates pour lesquelles ils veulent effectuer des traitements. Merci d&#8217;avance Rémy.</p></li><li
+id="comment-83" class="comment"><div
+class="meta">Par <strong>COULON</strong> le 2 mai 2010 &agrave; 17:27</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/7df153a3406b78ca54b3442a4492ffdc?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>J&#8217;allais enfin comprendre comment installer et franciser ce jquery qui me plaisait beaucoup.<br
+/> Rien à faire ! &#8230; je ne voudrais pourtant pas abandonner !<br
+/> Qu&#8217;est-ce qui ne va pas là, SVP ?</p><p> Le truc que je pige pas</p><p> jQuery(document).ready(function() {<br
+/> jQuery.datepicker.setDefaults(jQuery.datepicker.regional['fr']);<br
+/> jQuery(&laquo;&nbsp;#maDate&nbsp;&raquo;).mousedown(function(){<br
+/> jQuery(&laquo;&nbsp;#maDate&nbsp;&raquo;).datepicker(&#8216;change&#8217;, {dateFormat: &#8216;dd-mm-yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);<br
+/> });<br
+/> });</p></li><li
+id="comment-84" class="comment"><div
+class="meta">Par <strong>COULON</strong> le 2 mai 2010 &agrave; 17:41</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/7df153a3406b78ca54b3442a4492ffdc?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bon, c&#8217;est pas passé. Tant pis. Désolé.</p></li><li
+id="comment-88" class="comment"><div
+class="meta">Par <strong>BERTHOU</strong> le 27 juillet 2010 &agrave; 11:34</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/6599592e78c720f600fe60a47505e9bd?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>J&#8217;ai utilisé les 2 versions de ce datepicker, mais j&#8217;ai un petit problème: comment sélectionner une date avant l&#8217;an 2000, j&#8217;ai essayé de modifié les +(-)365000 mais sans résultats&#8230;</p><p>Un peu d&#8217;aide svp&#8230;</p></li><li
+id="comment-89" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>Rémy SOLNAIS</a></strong> le 9 août 2010 &agrave; 6:12</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour BERTHOU,</p><p>Désolé de la réponse tardive, mais juste rapidement : tu peux passer un objet date à la place</p><p>var maDate = new Date(1985,01,01); // annee,mois,jour<br
+/> min:maDate</p><p>Voilà, et si il y a besoin, n&#8217;hésite pas à revenir !</p></li><li
+id="comment-93" class="comment"><div
+class="meta">Par <strong>marygil</strong> le 21 septembre 2010 &agrave; 4:51</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour</p><p>Déjà pour vous féliciter de votre script c&#8217;est génial je m&nbsp;&raquo;en sert pour toutes mes dates.<br
+/> Jusqu&#8217;à présent dans ma BDD mon type date est au format texte mais maintenant je voudrais mettre au format &laquo;&nbsp;date&nbsp;&raquo; dans ma BDD.<br
+/> Mais ça ne marche plus c&#8217;est normal mais que dois-je modifier<br
+/> pour un bon fonctionnement avec toujours votre calendrier.</p><p>Voilà la fonction que j&#8217;ai<br
+/> Merci beaucoup de m&#8217;aider je n&#8217;y arrive vraiment pas</p><p>function calendrier() {<br
+/> $(document).ready(function () {<br
+/> $.datepicker.setDefaults($.datepicker.regional['fr']);<br
+/> $(&#8216;#monImage1&#8242;).click(function(){<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker(&#8216;show&#8217;);<br
+/> });<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker({minDate:&#8217;-36500&#8242;, maxDate:&#8217;+36500&#8242;, dateFormat: &#8216;dd MM yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);</p><p> $(&#8216;#monImage1&#8242;).mousedown(function(){<br
+/> $(&laquo;&nbsp;#naissance&nbsp;&raquo;).datepicker({minDate:&#8217;-36500&#8242;, maxDate:&#8217;+36500&#8242;, dateFormat: &#8216;dd MM yy&#8217;, firstDay:1 }).attr(&laquo;&nbsp;readonly&nbsp;&raquo;,&nbsp;&raquo;readonly&nbsp;&raquo;);<br
+/> });<br
+/> });</p></li><li
+id="comment-94" class="comment"><div
+class="meta">Par <strong><a
+href='http://www.remy-solnais.com' rel='external nofollow' class='url'>Rémy SOLNAIS</a></strong> le 25 septembre 2010 &agrave; 8:15</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/a3e88e81dd55b9759808768e3c7952fa?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>Les données que vous récupérez est une chaine de caractère de la forme &laquo;&nbsp;dd MM yy&nbsp;&raquo;. La base de données, MySQL je suppose, ou même une autre, possède un format spécial de la forme &laquo;&nbsp;yyyy-mm-dd hh:ii:ss&nbsp;&raquo; ou alors &laquo;&nbsp;yyyy-mm-dd&nbsp;&raquo;.</p><p>Il va donc falloir convertir votre date de la forme &laquo;&nbsp;dd MM yy&nbsp;&raquo; au format &laquo;&nbsp;yyyy-mm-dd&nbsp;&raquo; afin que votre base de données puisse interpréter la chaine de caractère comme une date (en php, une date n&#8217;est &laquo;&nbsp;qu&#8217;une&nbsp;&raquo; chaine de caractère normée.</p><p>En php, je vous invite à faire quelque chose de la sorte :</p><p>$sMaNewDate = ereg_replace(&#8216;^([0-9]{1,2}) ([0-9]{1,2}) ([0-9]{2,4})$&#8217;, &#8216;\\3-\\2-\\1&#8242;, $sPostDate);</p><p>$sPostDate est la variable contenant la date récupéré dans le formulaire (au format dd MM yy), et $sMaNewDate récupèrera la date normalisé.</p><p>Cette fonction ereg_replace va permettre d&#8217;échanger de place l&#8217;année et le jour.</p><p>Je précise juste que ereg_replace est une fonction déprécié, c&#8217;est à dire qu&#8217;il est déconseillé de s&#8217;en servir (car moins performante que preg_replace, mais je n&#8217;ai pas le courage en samedi matin de modifier la ligne de code, j&#8217;essayerai de vous le faire dans le week end.</p><p>Si vous avez encore besoin d&#8217;aide, n&#8217;hésitez pas à me contacter, soit via le formulaire, soit par mail directement (demandez le moi dans un commentaire, je vous contacterai directement, j&#8217;ai les adresses mails que vous saisissez dans le com).</p><p>Amicalement, Rémy.</p></li><li
+id="comment-95" class="comment"><div
+class="meta">Par <strong>Renaud</strong> le 4 octobre 2010 &agrave; 14:05</div><div
+class="alignright avatar"><img
+alt='' src='http://1.gravatar.com/avatar/9864b11fb0034cd2351e0b247a7037b4?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour,</p><p>juste un soucis de codage avec la version Fr ??</p><p>comme toujours les accents ne s&#8217;affiche pas ??</p><p>Merci de votre aide</p></li><li
+id="comment-96" class="comment"><div
+class="meta">Par <strong>marygil</strong> le 8 octobre 2010 &agrave; 21:20</div><div
+class="alignright avatar"><img
+alt='' src='http://0.gravatar.com/avatar/40eee35089256f26aca2c570bf26f393?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div><p>Bonjour</p><p>Je n&#8217;arrive vraiment à faire que le script fonctionne mais il est vrai que je ne suis pas doué.<br
+/> je me sert de votre calendrier pour 6 dates dans un formulaire c&#8217;est super génial mais maintenant c&#8217;est de faire en sorte que les dates s&#8217;affiche dans l&#8217;ordre.<br
+/> Pouvez vous me donner un coup de main ça serai très sympa.<br
+/> Merci beaucoup</p></li></ul><p><a
+href='http://www.remy-solnais.com/jquery-et-datepicker/feed/'>Flux <abbr
+title="Really Simple Syndication">RSS</abbr> des commentaires de cet article.</a> <a
+href="http://www.remy-solnais.com/jquery-et-datepicker/trackback/" rel="trackback">TrackBack <abbr
+title="Universal Resource Locator">URL</abbr></a></p><h2 id="postcomment">Laisser un commentaire</h2><form
+action="http://www.remy-solnais.com/wp-comments-post.php" method="post" id="formulaire"><p><input
+type="text" name="author" class="required" id="author" value="" size="22" tabindex="1" /> <label
+for="author"><small>Nom </small></label></p><p><input
+type="text" name="email" class="required" id="email" value="" size="22" tabindex="2" /> <label
+for="email"><small>E-mail </small></label></p><p><input
+type="text" name="url" id="url" value="" size="22" tabindex="3" /> <label
+for="url"><small>Site web</small></label></p><p><textarea name="comment" class="required" id="comment" cols="60" rows="12" tabindex="4"></textarea></p><p><input
+name="submit" type="submit" id="submit" tabindex="5" value="Soumettre le commentaire" /> <input
+type="hidden" name="comment_post_ID" value="55" /></p><div
+id="captchaImgDiv"><div
+class="captchaSizeDivLarge"><img
+id="si_image_com" class="si-captcha" src="http://www.remy-solnais.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show.php?si_form_id=com&amp;prefix=7WlsDIiMHbQWpiqy" alt="Image CAPTCHA" title="Image CAPTCHA" /> <input
+id="si_code_com" name="si_code_com" type="hidden"  value="7WlsDIiMHbQWpiqy" /><div
+id="si_audio_com"> <a
+id="si_aud_com" href="http://www.remy-solnais.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_play.php?si_form_id=com&amp;prefix=7WlsDIiMHbQWpiqy" rel="nofollow" title="CAPTCHA Audio"> <img
+class="captchaImgAudio" src="http://www.remy-solnais.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/audio_icon.png" alt="CAPTCHA Audio" onclick="this.blur();" /></a></div><div
+id="si_refresh_com"> <a
+href="#" rel="nofollow" title="Rafraîchir l&#039;image" onclick="si_captcha_refresh('si_image_com','com','mp3','/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage','http://www.remy-solnais.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show.php?si_form_id=com&amp;prefix='); return false;"> <img
+class="captchaImgRefresh" src="http://www.remy-solnais.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/refresh.png" alt="Rafraîchir l&#039;image" onclick="this.blur();" /></a></div></div><div
+id="captchaInputDiv"><input
+id="captcha_code" name="captcha_code" type="text" value="" tabindex="4"  /> <label
+id="captcha_code_label" for="captcha_code">CAPTCHA Code</label><span
+class="required"> *</span></div></div><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9900cf8aa0" /></p></form> <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+	$('#formulaire').validate({
+		messages: {
+			comment: {
+				required: "<br /><span style=\"color:red;\">Ce champ est requis !</span>"
+			},
+			author: {
+				required: " <span style=\"color:red;\">Ce champ est requis !</span>"
+			},
+			email: {
+				required: " <span style=\"color:red;\">Ce champ est requis !</span>"
+			}
+		}
+	});
+});/*]]>*/</script> </div></div><div
+class="navigation"><div
+class="alignleft"></div><div
+class="alignright"></div></div></div></div></div><div
+id="footer"><div
+id="credits"><div
+style="text-align:center;"> Copyright &copy;2011 <a
+href="http://www.remy-solnais.com/" title="Rem&#039;s Blog">Rem&#039;s Blog</a><div> <a
+href="http://validator.w3.org/check?uri=referer"><img
+style="border:0;width:88px;height:31px"
+src="http://www.w3.org/Icons/valid-xhtml10"
+alt="Valid XHTML 1.0 Transitional" /></a> <a
+href="http://jigsaw.w3.org/css-validator/check/referer"> <img
+style="border:0;width:88px;height:31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss"
+alt="CSS Valide !" /> </a></div></div></div></div> <script type="text/javascript">/*<![CDATA[*///
+var si_captcha_styles = "\
+<!-- begin SI Captcha Anti-Spam - comment form style -->\
+<style type='text/css'>\
+div#captchaImgDiv { display:block; }\
+.captchaSizeDivSmall { width:175px; height:45px; padding-top:10px; }\
+.captchaSizeDivLarge { width:250px; height:60px; padding-top:10px; }\
+img#si_image_com,#si_image_reg,#si_image_log,#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }\
+.captchaImgAudio { border-style:none; margin:0; vertical-align:top; }\
+.captchaImgRefresh { border-style:none; margin:0; vertical-align:bottom; }\
+div#captchaInputDiv { display:block; padding-top:15px; padding-bottom:5px; }\
+label#captcha_code_label { margin:0; }\
+input#captcha_code { width:65px; }\
+</style>\
+<!-- end SI Captcha Anti-Spam - comment form style -->\
+";
+jQuery(document).ready(function($) {
+$('head').append(si_captcha_styles);
+});
+///*]]>*/</script><!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.artnets.org/" : "http://stats.artnets.org/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://stats.artnets.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt=""/></p></noscript>
+<!-- End Piwik Tag -->
+
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 2.160 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2011-08-09 09:29:08 -->
+<!-- super cache -->

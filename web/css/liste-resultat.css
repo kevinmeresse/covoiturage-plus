@@ -1,0 +1,47 @@
+/* #page-resultat
+================================================== */
+
+
+#rechercheavancee { display:none;}
+#rechercheavancee .btnrecherchestandard { display:block;}
+#liste-resultat table { width:100%; margin-bottom:10px;}
+
+#liste-resultat table tr:hover { background-color:#f2f2f2; cursor:pointer;}
+
+table, td { word-wrap: break-word; }
+
+
+
+#liste-resultat table td { border-top:1px solid #ccc;}
+#liste-resultat table tr:first-child { border-top:none;  }
+
+
+
+
+#liste-resultat table thead tr, #liste-resultat table thead tr:hover { background:#93C72A; color:#FFF; font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:1em; text-align:left; cursor:pointer;}
+#liste-resultat table thead tr th { padding:3px; }
+
+#liste-resultat table tr td { width:8%; vertical-align:middle; font-size:0.9em; padding:3px; vertical-align:top;}
+#liste-resultat table tr td + td { width:25%;  max-width:70px;}
+#liste-resultat table tr td + td + td { width:25%; max-width:70px;}
+#liste-resultat table tr td + td + td + td { width:23%;  }
+#liste-resultat table tr td + td + td + td + td { width:13%; }
+#liste-resultat table tr td + td + td + td + td + td { width:4%; }
+
+#liste-resultat table tr td.icon-statut a { background:url(../images/structure/conducteur.png) no-repeat; width:38px; height:20px; display:block;line-height:20px;}
+#liste-resultat table tr td a.conducteur { background-position:0 -40px; }
+#liste-resultat table tr td a.passager {background-position:0 -20px;}
+#liste-resultat table tr td a.indifferent {background-position:0 0;}
+
+#liste-resultat table tr td a.detail { background:url(../images/structure/picto-plus.png) no-repeat; display:block; height:25px; width:30px; line-height:30px;}
+
+td.detailtrajet p { margin:0; padding:0;}
+td.detailtrajet p label { float:left; width:150px; color:#93C72A;}
+
+td.detailtrajet h3 {font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:1.6em; margin:0; padding:0; }
+
+td.detailtrajet p.fichedetail, td.detailtrajet p.contactez  { text-align:right; float:right; margin-bottom:20px; padding-left:10px; margin-top:20px;}
+
+p.fichedetail a, p.contactez a {  background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.2em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none}
+
+p.fichedetail a:hover, p.contactez a:hover { background:#ff8800;}

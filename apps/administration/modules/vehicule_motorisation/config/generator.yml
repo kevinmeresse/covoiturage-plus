@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           VehiculeMotorisation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          vehicule_motorisation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_motorisation:  { label: Motorisation, help: Indiquez le type de la motorisation du véhicule }
+        description:       { label: Description }
+      list:
+        title: Liste des types de motorisation de véhicule
+        display: [nom_motorisation, description]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title:  "Type de motorisation => %%nom_motorisation%%"
+      new:     ~

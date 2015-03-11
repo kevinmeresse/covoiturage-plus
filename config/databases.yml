@@ -1,0 +1,125 @@
+kev:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov_cplus'
+      username: coov_dba
+      password: yk0w9z
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+
+kev2:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov'
+      username: coov_dba
+      password: yk0w9z
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+
+seve:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov'
+      username: ecoov
+      password: ecoov
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+
+seve2:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+
+dev:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+      
+prod:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov'
+      username: coov_dba
+      password: yk0w9z
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+      
+prod_debug:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov'
+      username: coov_dba
+      password: yk0w9z
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+      
+preprod:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus
+
+preprod_debug:
+  dbrmv3:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev
+  dbcvp:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=193.169.11.211;dbname=covoiturageplus'
+      username: covoiturageplus
+      password: covoiturageplus

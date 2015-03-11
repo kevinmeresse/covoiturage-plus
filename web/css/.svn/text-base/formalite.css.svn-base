@@ -1,0 +1,11 @@
+/* page formalites 
+================================================== */
+div.formalite { text-align:justify;}
+
+
+
+h2 { font-family:'HelveticaLTCondensed', Arial, sans-serif; font-size:3em; color:#322171; }
+
+h3 { font-family:'HelveticaLTCondensed', Arial, sans-serif; font-size:2em; color:#322171; line-height:2em; }
+
+h4 { font-family:'HelveticaLTCondensed', Arial, sans-serif; font-size:1.4em; color:#322171; line-height:1.4em; }

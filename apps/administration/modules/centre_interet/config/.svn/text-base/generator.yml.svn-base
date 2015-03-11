@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           CentreInteret
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          centre_interet
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelle:        { label: Libellé, help: Indiquez le nom du centre d'intérêt }
+        description:    { label: Description }
+      list:
+        title:          Liste des centres d'intérêt
+        display:        [libelle, description]
+      filter:
+        class:          false
+      form:             ~
+      edit:
+        title:         "Centre d'intérêt => %%libelle%%"
+      new:              ~

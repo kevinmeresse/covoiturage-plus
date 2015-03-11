@@ -1,0 +1,15 @@
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev
+
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=ecoov_dev'
+      username: ecoov_dev
+      password: ecoov_dev

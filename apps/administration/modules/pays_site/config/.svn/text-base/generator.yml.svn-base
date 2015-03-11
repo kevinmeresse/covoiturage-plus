@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PaysSite
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pays_site
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_pays:    { label: Pays }
+        pays_monde:       { label: Pays }
+        id_site:    { label: Site client }
+        site_client:       { label: Site client }
+      list:
+        title: Liste des associations "Site Client => Pays"
+        display: [site_client, pays_monde]
+        table_method: retrieveBackendPaysSiteClientList
+      filter:
+        display: [id_site, id_pays]
+      form:    ~
+      edit:
+        title:  "Association du site \"%%site_client%%\" au pays \"%%pays_monde%%\" "
+      new:     ~

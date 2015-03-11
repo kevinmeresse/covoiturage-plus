@@ -1,0 +1,34 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  max_trajet_list:  10
+  
+  #format des dates en affichage
+  fr:
+    format_date_court : "d-M-Y"
+    format_date_court_horaire: "d-M-Y HH:mm:ss"
+    format_date_long : "E, d M Y"
+    format_date_long_horaire: "E, d M Y HH:mm:ss"
+
+#Gestion clés GM Api  
+  google_maps_api:
+    keys:
+      covoiturage:            'ABQIAAAARNgopWZZBboik16TizbvPRTdk7gPyBPUcaMGiPUSAMBteC5G7BR-awCmZUW3eXn-z3iSGKy4MI_A8Q'
+      covoiturage.serveur-dev:                      'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+      default:                        'ABQIAAAARNgopWZZBboik16TizbvPRQzfng80oAE_KZ30Ejm7FLTj4IeLhQr33etY1SpLtPma2plbReNfBONXg'
+
+
+  #adresse de base de covoiturage plus pour centrage de la carte Google Map
+  covoiturage_adresse_map:     '20 rue d’Isly, 35000 Rennes, France'
+  
+  #message d'erreur à l'identification
+  ident_mesg_erreur:           'Veuillez vérifier votre identifiant et mot de passe.'
+  
+  #message de suppression de compte
+  covoit_supp_profil_msg:           'Vous venez de supprimer votre compte. Cette opération est immédiatement active.'
+  
+  #nom de la catégorie des pages isolées pour le sitemap (plan du site)
+  nom_cat_page_uniq:                'autres'
+  nom_cat_page_actu:                'actualités'

@@ -1,0 +1,14 @@
+#header,
+div.container div.one-third,
+div.container div.sixteen,
+#outilbaspage,
+div.footer,
+#fiche-resultat #detailfiche ul.ui-tabs-nav,
+#fiche-resultat #detailfiche #tabs-1,
+#fiche-resultat #detailfiche #tabs-2,
+#fiche-resultat #detailfiche #tabs-3,
+#fiche-resultat #detailfiche #map_tab ul#commande,
+#fiche-resultat p.retour-liste
+{
+ display:none;
+}

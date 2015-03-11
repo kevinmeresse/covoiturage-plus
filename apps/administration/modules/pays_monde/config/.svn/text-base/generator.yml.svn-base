@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PaysMonde
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pays_monde
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_pays:    { label: Pays, help: Indiquez le nom du pays }
+        nom_pays2:   { label: Autre intitulé }
+        code_pays:   { label: Code du pays }
+      list:
+        title:       Liste des pays
+        display:     [nom_pays, code_pays]
+      filter:
+        display:     [nom_pays, code_pays]
+      form:    ~
+      edit:
+        title:       "Pays => %%nom_pays%%"
+      new:     ~

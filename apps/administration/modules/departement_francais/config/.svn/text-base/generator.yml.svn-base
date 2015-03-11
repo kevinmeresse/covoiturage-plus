@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           DepartementFrancais
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          departement_francais
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_departement:        { label: Département, help: Indiquez le département }
+        id_region:              { label: Région }
+        region:                 { label: Région }
+        site_web_departement:   { label: Site web du département }
+      list:
+        title: Liste des départements
+        display: [nom_departement, site_web_departement, region]
+        table_method: retrieveBackendRegionList
+      filter:
+        display: [nom_departement, id_region]
+      form:    ~
+      edit:
+        title:  "Département => %%nom_departement%%"
+      new:     ~

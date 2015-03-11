@@ -1,0 +1,469 @@
+  # You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+
+
+all:
+  .settings:
+    organization_name:      Covoiturage+
+    site_name:              www.covoiturage.asso.fr
+    
+    # exytension fichier servant à la génération du fichier photo covoitureur
+    extension_fichier_image:            .jpg
+
+    #internationalisation
+    i18n: true
+    default_culture: fr_FR
+    standard_helpers: [Partial, Cache, I18N] 
+    
+    #gestion des fichiers photo covoitureur
+    #upload_dir: photo_covoitureur
+    web_dir:                         D:/WEB/covoiturage plus/covoiturage-plus-dev/web
+    ############  information pour les photos covoitureurs #############
+    # répertoire d'enregistrement des photos covoitureur
+    rep_commun_photo_covoitureur:            /images/photos/
+    rep_ini_photo_covoitureur:               /images/photos/
+    rep_thumb_photo_covoitureur:             /images/photos/thumb/
+    rep_thumb_photo_covoitureur_spl:         /images/photos/thumb/
+    # prefixe servant à la génération du fichier photo covoitureur
+    photo_covoitureur_prefixe:            photo_covoitureur_
+    thumb_covoitureur_prefixe:            thumb_covoitureur_
+    
+    ############  information pour les photos actualites #############
+    # répertoire d'enregistrement des photos actualites
+    rep_commun_photo_actualite:            /images/actu/
+    rep_ini_photo_actualite:               /images/actu/
+    rep_thumb_photo_actualite:             /images/actu/thumb/
+    rep_thumb_photo_actualite_spl:         /images/actu/thumb/
+    # prefixe servant à la génération du fichier photo actualites
+    photo_actualite_prefixe:            photo_actualite_
+    thumb_actualite_prefixe:            thumb_actualite_
+    
+    # mail d'envoi à covoiturage plus
+    mail_cp_contact_trajet:                covoiturageplus@covoiturage.asso.fr
+    mail_contact_site:         covoiturageplus@covoiturage.asso.fr
+    tel_contact_site:          02 99 35 10 77
+    
+    # mail d'envoi des mails
+    mail_envoi:                covoiturageplus@covoiturage.asso.fr
+    mail_reply_to:             noreply@covoiturage.asso.fr
+    mail_return-path:          noreply@covoiturage.asso.fr
+    
+    # indicateur d'etat des MER (mises en relation)
+    desc_ind__mer_0:           initialisée
+    desc_ind__mer_0_val:       0
+    desc_ind__mer_1:           validée
+    desc_ind__mer_1_val:       1
+    desc_ind__mer_2:           refusée
+    desc_ind__mer_2_val:       2
+    desc_ind__mer_4:           sans réponse
+    desc_ind__mer_4_val:       4
+    desc_ind__mer_5:           annulée par dépositaire trajet
+    desc_ind__mer_5_val:       5
+    desc_ind__mer_6:           annulée par demandeur MER
+    desc_ind__mer_6_val:       6
+    desc_ind__mer_7:           équipagée
+    desc_ind__mer_7_val:       7
+
+    #id de la ville par defaut (RENNES) en cas d'etablissement sans ville
+    id_defaut_etab:            14822
+    
+    #messagea affiche à l'utilisateur
+    message_action_realise:    votre action a été enregistrée
+    message_action_annule:     action precedente annulée
+    message_action_pas_action: aucune action sélectionnée
+
+
+dev:
+  .settings:
+    web_dir:                             /devlpt/web/roulezmalinv3/web
+    url_site:                            http://cplus.dev.roulezmalin.com
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            200
+
+    
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+    
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 16459
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 229
+    id_lieu_lieu :  229
+    id_lieu_zi :    230
+    id_lieu_aire :  229
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitements batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          3
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+
+    
+prod:
+  .settings:
+    #url servant de base pour les photos (le but étant d'utiliser le meme répertoire 
+    #que sur les versions V2 pour récupérer les photos déjà déposées
+    web_dir:                             /home/www/v3/covoiturage-plus/web
+    url_site:                            http://www.covoiturage.asso.fr
+    rep_commun_photo_covoitureur:        /images/photos/
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            244
+
+    
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+        
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 20000
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 94
+    id_lieu_lieu :  94
+    id_lieu_zi :    93
+    id_lieu_aire :  92
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitementcovoiturage/frontend_seve.php/trajet/editTrajetCovoitIdent/id_trajet/2191495s batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          3
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+    
+prod_debug:
+  .settings:
+    #url servant de base pour les photos (le but étant d'utiliser le meme répertoire 
+    #que sur les versions V2 pour récupérer les photos déjà déposées
+    web_dir:                             /home/www/v3/covoiturage-plus/web
+    url_site:                            http://www.covoiturage.asso.fr
+    rep_commun_photo_covoitureur:        /images/photos/
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            244
+
+    
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+        
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 20000
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 94
+    id_lieu_lieu :  94
+    id_lieu_zi :    93
+    id_lieu_aire :  92
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitementcovoiturage/frontend_seve.php/trajet/editTrajetCovoitIdent/id_trajet/2191495s batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          3
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+    
+seve:
+  .settings:    
+    chemin_base:                         c:/wamp
+    url_site:                            http://covoiturage
+    ############  information pour les photos actualites #############
+    web_dir:                             c:/wamp/www/roulezmalinv3/web
+    rep_commun_photo_covoitureur:            /images/photos/
+    # répertoire d'enregistrement des photos actualites
+    rep_commun_photo_actualite:            /images/actu/
+    rep_ini_photo_actualite:               /images/actu/
+    rep_thumb_photo_actualite:             /images/actu/thumb/
+    rep_thumb_photo_actualite_spl:         /images/actu/thumb/
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            200
+
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 41
+
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 88
+    id_lieu_lieu : 89
+    id_lieu_zi : 89
+    id_lieu_aire : 91
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitements batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            37
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        2
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          3
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+
+seve2:
+  .settings:
+    chemin_base:                         c:/wamp/
+    url_site:                            http://covoiturage
+    ############  information pour les photos actualites #############
+    # répertoire d'enregistrement des photos actualites
+    rep_commun_photo_actualite:            /images/actu/
+    rep_ini_photo_actualite:               /images/actu/
+    rep_thumb_photo_actualite:             /images/actu/thumb/
+    rep_thumb_photo_actualite_spl:         /images/actu/thumb/
+
+    # definition de l'id du site servant de réference
+    id_site_client:            200
+
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 20
+
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 88
+    id_lieu_lieu : 89
+    id_lieu_zi : 89
+    id_lieu_aire : 91
+
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitements batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          3
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+
+    
+preprod:
+  .settings:    
+    web_dir:                             /Volumes/Data/web/covoiturage-plus/sources/web
+    url_site:                            http://covoiturage-plus.covoiturageenligne.com
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            244
+
+    
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+        
+    #indicateur de l etablissement PSA => correspond au id de la RS
+    id_etablissement_psa_RS: 16459
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 88
+    id_lieu_lieu : 89
+    id_lieu_zi : 93
+    id_lieu_aire : 91
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitements batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          2
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+    
+    
+preprod_debug:
+  .settings:    
+    web_dir:                             /Volumes/Data/web/covoiturage-plus/sources/web
+    url_site:                            http://covoiturage-plus.covoiturageenligne.com
+    
+    # definition de l'id du site servant de réference
+    id_site_client:            200
+
+    
+    #indicateur du site peugeot
+    id_site_peugeot: 201
+        
+    #indicateur de l etablissement PSA => correspond au id de la RS
+    id_etablissement_psa_RS: 16459
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 88
+    id_lieu_lieu : 89
+    id_lieu_zi : 93
+    id_lieu_aire : 91
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil: 5
+    
+    ###############################################
+    #  variables pour les traitements batch       #
+    ###############################################
+    # batch de suivi de MER
+    batch_suivi_mer_nb_jour:            15
+    batch_suivi_mer_user:               0
+    batch_suivi_mer_type_action:        0
+    batch_suivi_mer_objet:              suivi de votre demande de mise en relation
+    batch_suivi_mer_action_detail:      batch - envoi mail de suivi demande de mise en relation
+    batch_suivi_mer_type_prov:          2
+    
+    #batch d'alerte sur les trajets
+    batch_alerte_trajet_objet:              alerte sur trajet depose ou modifie
+    batch_alerte_trajet_action_detail:      batch - envoi mail sur alerte sur trajet depose ou modifie
+    batch_alerte_trajet_type_prov:          2
+    
+    #batch d'alerte sur les trajets annulé
+    batch_alerte_trajet_supp_objet:              alerte sur trajet supprime
+    batch_alerte_trajet_supp_action_detail:      batch - envoi mail sur alerte sur trajet supprime
+    batch_alerte_trajet_supp_type_prov:          4
+
+kev:
+  .settings:
+    web_dir:                         D:/WEB/covoiturage plus/covoiturage-plus-dev/web
+    url_site:                        http://cplus.local.roulezmalin.com
+    ############  information pour les photos actualites #############
+    # répertoire d'enregistrement des photos actualites
+    rep_commun_photo_actualite:      /images/actu/
+    rep_ini_photo_actualite:         /images/actu/
+    rep_thumb_photo_actualite:       /images/actu/thumb/
+    rep_thumb_photo_actualite_spl:   /images/actu/thumb/
+    
+    # definition de l'id du site servant de réference
+    id_site_client:                  244
+
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 20000
+
+    #indicateur du site peugeot
+    id_site_peugeot:                 201
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 94
+    id_lieu_lieu :  94
+    id_lieu_zi :    93
+    id_lieu_aire :  92
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil:                    5
+    
+kev2:
+  .settings:
+    web_dir:                         /Volumes/Data/Work/RoulezMalin/DEV/cplus/web
+    url_site:                        http://cplus.local.roulezmalin.com
+    ############  information pour les photos actualites #############
+    # répertoire d'enregistrement des photos actualites
+    rep_commun_photo_actualite:      /images/actu/
+    rep_ini_photo_actualite:         /images/actu/
+    rep_thumb_photo_actualite:       /images/actu/thumb/
+    rep_thumb_photo_actualite_spl:   /images/actu/thumb/
+    
+    # definition de l'id du site servant de réference
+    id_site_client:                  244
+
+    #indicateur de l etablissement PSA
+    id_etablissement_psa_RS: 20000
+
+    #indicateur du site peugeot
+    id_site_peugeot:                 201
+    
+    #indicateur des lieux type pour les requete
+    id_lieu_evnmt : 94
+    id_lieu_lieu :  94
+    id_lieu_zi :    93
+    id_lieu_aire :  92
+    
+    #identifiant du profil FO servant en BO
+    id_fo_profil:                    5

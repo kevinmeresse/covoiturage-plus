@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * sfGuardPermission form.
+ *
+ * @package    roulezmailn_v3
+ * @subpackage form
+ * @author     RoulezMalin
+ * @version    SVN: $Id: sfDoctrinePluginFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+class sfGuardPermissionForm extends PluginsfGuardPermissionForm
+{
+  public function configure()
+  {
+  }
+}

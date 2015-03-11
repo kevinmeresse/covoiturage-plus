@@ -1,0 +1,56 @@
+/* page contact 
+================================================== */
+
+#page-contact form{ width:92%; border:1px solid #ccc; padding:15px; -moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		border-radius: 15px;
+		-moz-box-shadow: 5px 5px 5px #ccc;
+		-webkit-box-shadow: 5px 5px 5px #ccc;
+		box-shadow: 5px 5px 5px #ccc;
+		background: #fff; /* ie6 trop pourri - ie tout court */
+		background: -moz-linear-gradient(top, rgba(220,220,220,0.84) 0%, rgba(255,255,255,.6) 60%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,220,220,0.84)), color-stop(60%,rgba(255,255,255,.6))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(220,220,220,0.84) 0%,rgba(255,255,255,.6) 60%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(220,220,220,0.84) 0%,rgba(255,255,255,.6) 60%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, rgba(220,220,220,0.84) 0%,rgba(255,255,255,.6) 60%); /* IE10+ */
+		background: linear-gradient(top, rgba(220,220,220,0.84) 0%,rgba(255,255,255,.6) 60%); /* W3C */
+		
+		}
+
+
+
+#page-contact h2 { font-family:'HelveticaLTCondensed', Arial, sans-serif; font-size:3em; color:#322171; }
+
+#page-contact fieldset { float:left; width:48%; margin-bottom:0px;}
+
+#page-contact fieldset + fieldset { margin-left:10px;}
+#page-contact p {margin:0; padding:0;}
+#page-contact p input[type="text"], #page-contact p select{margin:0 0 10px 0; padding:5px;}
+#page-contact input[type="submit"] { margin-top:10px; }
+#page-contact p input[type="submit"], #page-contact input[type="submit"]  {
+	background-color:#333;
+	height:58px;	
+	border: none;
+	vertical-align:top;
+	color:white;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	font-size:1.5em;
+	font-weight:normal;
+	-moz-box-shadow: 5px 5px 5px #ccc;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+  	margin-top:30px;
+}
+
+
+#page-contact #contact_demande { width:89%;}
+
+
+/* Tooltip  champs  required
+================================================== */
+#page-contact { position: relative;}
+
+
+div.contact { height:70px;}

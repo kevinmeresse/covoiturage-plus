@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+editSuccess:
+  stylesheets:    []  
+  javascripts:    [http://maps.google.com/maps/api/js?sensor=false,jquery.ui.addresspicker.js]
+newSuccess:
+  stylesheets:    []  
+  javascripts:    [http://maps.google.com/maps/api/js?sensor=false,jquery.ui.addresspicker.js]
+editFromRsSuccess:
+  stylesheets:    []  
+  javascripts:    [http://maps.google.com/maps/api/js?sensor=false,jquery.ui.addresspicker.js]
+newFromRsSuccess:
+  stylesheets:    []  
+  javascripts:    [http://maps.google.com/maps/api/js?sensor=false,jquery.ui.addresspicker.js]

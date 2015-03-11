@@ -1,0 +1,117 @@
+/* #fiche-resultat
+================================================== */
+
+#fiche-resultat {}
+
+#fiche-resultat h4 {font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:1.6em; margin:0; padding:0; }
+
+#fiche-resultat .ui-helper-hidden { display: none; }
+#fiche-resultat .ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+#fiche-resultat .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+#fiche-resultat .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#fiche-resultat .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html #fiche-resultat .ui-helper-clearfix { height:1%; }
+#fiche-resultat .ui-helper-clearfix { display:block; }
+
+#fiche-resultat .ui-widget-content {color: #333333; background:white; border:none;}
+#fiche-resultat .ui-widget-content a { color: #333333; }
+#fiche-resultat .ui-widget-header {  color: #ffffff;  }
+#fiche-resultat .ui-widget-header a { color: #ffffff; }
+
+#fiche-resultat #note { width:100px;}
+ul#note-stars {margin:0; padding:0; float:right;}
+ul#note-stars li { float:left; line-height:10px; padding:0; margin:0;}
+ul#note-stars li a { background:url(../images/structure/star.png) no-repeat; display:block; width:15px; height:15px; }
+ul#note-stars li.desactive a { background:none; display:none; width:15px; height:15px; }
+
+#fiche-resultat span#homme { display:block;width:30px;height:30px;background:url(/images/picto/homme.png);float:left;margin-right:10px;}
+#fiche-resultat span#femme { display:block;width:30px;height:30px;background:url(/images/picto/femme.png);float:left;margin-right:10px;}
+#fiche-resultat span#petit-bagage {display:block;width:50px;height:50px; float:left;background:url(/images/picto/petit-bagage-no.png);margin-bottom:10px;}
+#fiche-resultat span#moyen-bagage {display:block;width:50px;height:50px; float:left;background:url(/images/picto/moyen-bagage-no.png);margin-bottom:10px;}
+#fiche-resultat span#gros-bagage {display:block;width:50px;height:50px; float:left;background:url(/images/picto/gros-bagage-no.png);margin-bottom:10px;}
+#fiche-resultat span#petit-bagage-ok {display:block;width:50px;height:50px; float:left;background:url(/images/picto/petit-bagage-orange.png);margin-bottom:10px;}
+#fiche-resultat span#moyen-bagage-ok {display:block;width:50px;height:50px; float:left;background:url(/images/picto/moyen-bagage-orange.png);margin-bottom:10px;}
+#fiche-resultat span#gros-bagage-ok {display:block;width:50px;height:50px; float:left;background:url(/images/picto/gros-bagage-orange.png);margin-bottom:10px;}
+
+#fiche-resultat #note { display:block;float:left; margin-top:10px; }
+#fiche-resultat #note p { margin:0; padding:0; font-size:0.8em; text-align:right;}
+ul#commande { float:right;width:50px;}
+ul#commande li { display:inline;float:left;}
+
+#fiche-resultat h4 { width:360px;float:left;}
+
+#fiche-resultat div#tabs-3 textarea { width:97%;min-height:150px;}
+
+#fiche-resultat div#animaux { width:50px;height:50px; background:url(../images/picto/animaux-orange.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#discussion { width:50px;height:50px; background:url(../images/picto/discu-orange.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#fumeur { width:50px;height:50px; background:url(../images/picto/cigarette-orange.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#musique { width:50px;height:50px; background:url(../images/picto/music-orange.png);float:left;margin:0;margin-bottom:10px;}
+
+#fiche-resultat div#animaux_non { width:50px;height:50px; background:url(../images/picto/animaux-no.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#discussion_non { width:50px;height:50px; background:url(../images/picto/discu-no.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#fumeur_non { width:50px;height:50px; background:url(../images/picto/cigarette-no.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#musique_non { width:50px;height:50px; background:url(../images/picto/music-no.png);float:left;margin:0;margin-bottom:10px;}
+#fiche-resultat div#bagage_non { width:50px;height:50px; background:url(../images/picto/moyen-bagage-no.png);float:left;margin:0;margin-bottom:10px;}
+
+
+
+
+tabs-2 p:firstchild { border:1px solid #ccc; padding:10px;}
+
+#fiche-resultat ul.etape { margin-left: 225px;}
+#fiche-resultat ul.etape li { display:inline; padding-right:15px; margin-right:10px; background:url(../images/structure/fleche-gris.png) no-repeat right;}
+#fiche-resultat ul.etape li:last-child { background:none;}
+
+table#tableDate { width:70%; background:white; margin-bottom:10px;}
+table#tableDate thead tr { background:#93C72A; color:#FFF; font-family:'HelveticaLTCondensed',arial, sans-serif; font-size:1em; text-align:left; cursor:pointer;}
+table#tableDate td, table#tableDate th { padding:5px; border-top:1px solid #93C72A; }
+#detailfiche label { float:left; width:225px; }
+
+#detailfiche #tabs-2 ul { display:block;}
+#detailfiche #tabs-2 li { display:inline;}
+
+/* Interaction states
+----------------------------------*/
+#fiche-resultat .ui-state-default, #fiche-resultat .ui-widget-content .ui-state-default, #fiche-resultat .ui-widget-header .ui-state-default {background: #B1DC5A;  }
+#fiche-resultat .ui-state-default a, #fiche-resultat .ui-state-default a:link, #fiche-resultat .ui-state-default a:visited { color: #fff; text-decoration: none; }
+#fiche-resultat .ui-state-hover, #fiche-resultat .ui-widget-content .ui-state-hover, #fiche-resultat .ui-widget-header .ui-state-hover, #fiche-resultat .ui-state-focus, #fiche-resultat .ui-widget-content .ui-state-focus, #fiche-resultat .ui-widget-header .ui-state-focus { background: #93C72A;  color: #fff; }
+#fiche-resultat .ui-state-hover a, #fiche-resultat .ui-state-hover a:hover { color: #fff; text-decoration: none; }
+#fiche-resultat .ui-state-active, #fiche-resultat .ui-widget-content .ui-state-active, #fiche-resultat .ui-widget-header .ui-state-active {  background: #93C72A; }
+#fiche-resultat .ui-state-active a, #fiche-resultat .ui-state-active a:link, #fiche-resultat .ui-state-active a:visited { color: #fff; text-decoration: none; }
+#fiche-resultat .ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+#fiche-resultat .ui-state-highlight, #fiche-resultat .ui-widget-content .ui-state-highlight, #fiche-resultat .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+#fiche-resultat .ui-state-highlight a, #fiche-resultat .ui-widget-content .ui-state-highlight a,#fiche-resultat .ui-widget-header .ui-state-highlight a { color: #363636; }
+#fiche-resultat .ui-state-error, #fiche-resultat .ui-widget-content .ui-state-error, #fiche-resultat .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+#fiche-resultat .ui-state-error a, #fiche-resultat .ui-widget-content .ui-state-error a, #fiche-resultat .ui-widget-header .ui-state-error a { color: #ffffff; }
+#fiche-resultat .ui-state-error-text, #fiche-resultat .ui-widget-content .ui-state-error-text, #fiche-resultat .ui-widget-header .ui-state-error-text { color: #ffffff; }
+#fiche-resultat .ui-priority-primary, #fiche-resultat .ui-widget-content .ui-priority-primary, #fiche-resultat .ui-widget-header .ui-priority-primary { font-weight: bold; }
+#fiche-resultat .ui-priority-secondary, #fiche-resultat .ui-widget-content .ui-priority-secondary,  #fiche-resultat .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+#fiche-resultat .ui-state-disabled, #fiche-resultat .ui-widget-content .ui-state-disabled, #fiche-resultat .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+#fiche-resultat .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#fiche-resultat .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+#fiche-resultat .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+#fiche-resultat .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+#fiche-resultat .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+#fiche-resultat .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,#fiche-resultat .ui-tabs .ui-tabs-nav li.ui-state-disabled a, #fiche-resultat .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#fiche-resultat .ui-tabs .ui-tabs-nav li a,#fiche-resultat .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#fiche-resultat .ui-tabs .ui-tabs-panel { display: block; border-width: 1px; padding: 1em 1.4em; background: none; }
+#fiche-resultat .ui-tabs .ui-tabs-hide { display: none !important; }
+
+#detailfiche .ui-tabs-panel { border:1px solid #93C72A;}
+#detailfiche .ui-widget-header { background:white; }
+
+
+
+p.fichedetail a:hover, p.contactez a:hover { background:#ff8800;}
+
+#detailfiche p.motDePasseOublie, #detailfiche p.envoiAmi  { text-align:right; float:right; margin-left:10px;}
+#detailfiche p.valide { margin:0; text-align:right;} 
+ #detailfiche input[type="submit"]  {background:#ff6600; color:#FFF; padding:10px 20px; font-size:1.2em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none; border:none; font-weight:normal;}
+
+#detailfiche p.motDePasseOublie a, #detailfiche p.envoiAmi a  {background:#ff6600; color:#FFF; padding:5px 10px; font-size:1em; -moz-border-radius: 20px;	-webkit-border-radius: 20px;	border-radius: 20px; margin-top:20px;   font-family:'HelveticaLTCondensed',arial, sans-serif; text-decoration:none; border:none; font-weight:normal;}
+
+#detailfiche p.motDePasseOublie a:hover, #detailfiche p.envoiAmi a:hover, #detailfiche input[type="submit"]:hover  {background:#ff8800;}

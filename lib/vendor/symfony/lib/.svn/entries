@@ -1,0 +1,130 @@
+10
+
+dir
+1663
+svn://kevin@193.169.11.211/roulez-malin/V3/trunk/sources/lib/vendor/symfony/lib
+svn://kevin@193.169.11.211/roulez-malin
+
+
+
+2012-02-09T13:36:55.252440Z
+1301
+christophe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cbeffc2b-6f1d-4316-b77f-f30d48018937
+
+escaper
+dir
+
+controller
+dir
+
+widget
+dir
+
+validator
+dir
+
+debug
+dir
+
+generator
+dir
+
+response
+dir
+
+plugin
+dir
+
+exception
+dir
+
+task
+dir
+
+cache
+dir
+
+storage
+dir
+
+database
+dir
+
+autoload
+dir
+
+mailer
+dir
+
+view
+dir
+
+command
+dir
+
+test
+dir
+
+i18n
+dir
+
+helper
+dir
+
+plugins
+dir
+
+log
+dir
+
+addon
+dir
+
+filter
+dir
+
+routing
+dir
+
+event_dispatcher
+dir
+
+request
+dir
+
+vendor
+dir
+
+yaml
+dir
+
+form
+dir
+
+config
+dir
+
+util
+dir
+
+action
+dir
+
+user
+dir
+

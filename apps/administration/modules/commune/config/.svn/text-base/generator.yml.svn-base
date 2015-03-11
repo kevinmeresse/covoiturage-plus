@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Commune
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          commune
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_commune:       { label: Commune, help: Indiquez le nom de la commune }
+        code_postal:       { label: Code Postal }
+        code_insee:        { label: Code Insee }
+        departement:       { label: Département}
+      list:
+        title: Liste des communes
+        display: [nom_commune, code_postal, code_insee, departement]
+      filter:
+        display: [nom_commune, code_postal, departement]
+      form:    ~
+      edit:
+        title:  "Commune => %%nom_commune%%"
+      new:     ~

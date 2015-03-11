@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           VehiculeCategorie
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          vehicule_categorie
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nom_vehicule_categorie:        { label: Type de véhicule, help: Indiquez le type du véhicule }
+        description:                   { label: Description }
+      list:
+        title:                         Liste des types de véhicule
+        display:                       [nom_vehicule_categorie, description]
+      filter:
+        class:                         false
+      form:                            ~
+      edit:
+        title:                         "Type de véhicule => %%nom_vehicule_categorie%%"
+      new:                             ~

@@ -1,0 +1,11 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+listSuccess:
+  stylesheets:    [liste-resultat.css]  
+listAlloStopSuccess:
+  stylesheets:    [liste-resultat.css]    
+viewSuccess:
+  stylesheets:    [fiche-resultat.css]
+listComntComSuccess:
+  stylesheets:    [liste-resultat.css]

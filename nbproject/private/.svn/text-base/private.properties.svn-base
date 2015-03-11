@@ -1,0 +1,7 @@
+auxiliary.org-netbeans-modules-php-editor.dbconn=jdbc:mysql://193.169.11.211:3306/ecoov_dev [ecoov_dev on Default schema]
+auxiliary.org-netbeans-modules-php-phpdoc.target=D:\\WEB\\test
+copy.src.files=false
+copy.src.target=
+index.file=
+run.as=LOCAL
+url=http://covoiturage.ubuntu/

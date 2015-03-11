@@ -1,0 +1,43 @@
+
+
+div.guestbook-outil {background: #77AD0C; /* ie6 trop pourri - ie tout court */ 
+	width:100%; height:35px; padding-top:5px;
+	background: -moz-linear-gradient(top, rgba(182,232,81,1) 0%, rgba(119,173,12,1) 90%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(182,232,81,1)), color-stop(90%,rgba(119,173,12,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* IE10+ */
+	background: linear-gradient(top, rgba(182,232,81,1) 0%,rgba(119,173,12,1) 90%); /* W3C */}
+
+div.guestbook-outil a { display:block; height:20px; background:white; text-decoration:none; width:120px;margin-left:15px; line-height:20px; padding:5px 10px 5px 10px;
+-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;}
+	
+	
+/* style message */
+
+div.un-message { margin-top:40px; border:1px dashed #999; padding:5px; font-family:'HelveticaLTCondensed', Arial, sans-serif;}
+
+div.un-message div.info { height:30px; background:#77AD0C; line-height:30px; color:white; }
+
+div.un-message div.info p.nom-guestbook { display:inline; margin-left:10px}
+
+div.un-message div.info p.date-guestbook { display:inline; float:right; margin-right:30px;}
+
+div.un-message p.le-message { margin-top:10px;}
+
+
+/* pagination */
+
+div.pagination { width:200px; margin:20px auto; }
+
+/* laisser un message */
+
+div#laisser-message p textarea { width:80%; height:200px;}
+
+div#laisser-message p input[type=submit] { 
+											float:left;										
+
+}
+
